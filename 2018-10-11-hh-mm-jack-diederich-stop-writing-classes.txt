@@ -302,11 +302,11 @@ transcript:
 
     Conclusion
 
-    (1) "If you see a class with 2 methods..., it's not a class."
+        (1) "If you see a class with 2 methods..., it's not a class."
 
-    (2) "Don't make new exceptions when you don't need to."
+        (2) "Don't make new exceptions when you don't need to. And you don't need to."
 
-    (3) "Refactor relentlessly."
+        (3) "Refactor relentlessly."
 
 
 ---------------------------
