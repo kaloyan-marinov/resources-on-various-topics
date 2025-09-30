@@ -174,11 +174,11 @@ transcript:
 
 
 
-    - exceptions are overused
+    exceptions are overused
 
-    "Anytime you type a class,
-    you should be thinking,
-    'What am I doing this for?'"
+        anytime you type a class,
+        you should be thinking,
+        "What am I doing this for?"
 
     good:
     EmptyBeer
