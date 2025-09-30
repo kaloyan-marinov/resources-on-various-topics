@@ -294,8 +294,9 @@ transcript:
 
 
 
-    "Conway's game of life"
-    --> "Conway's really simple game of life"
+    Conway's game of life
+    
+        [see the source video for an example of how to avoid classes altogether]
 
 
 
