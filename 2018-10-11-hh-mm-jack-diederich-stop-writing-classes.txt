@@ -180,15 +180,39 @@ transcript:
         you should be thinking,
         "What am I doing this for?"
 
-    good:
-    EmptyBeer
-    BeerError
-    BeerNotFound
 
-    bad:
-    EmptyBeerNotFoundError
 
-    "You can just use [Python] Standard Library exceptions. People understand them."
+    guidelines for naming exceptions appropriately
+
+        bad:
+        `EmptyBeerNotFoundError`
+
+        better:
+        `EmptyBeer`
+        `BeerError`
+        `BeerNotFound`
+
+        best:
+        You can just use [Python] Standard Library exceptions.
+        People understand them.
+        Unless you want to catch a very specific condition,
+        `LookupError` is just as good as anything else.
+
+
+
+        if you get an email with a traceback in it,
+        you're going to have to go read it anyway
+        and
+        it doesn't really matter what the exception was named
+
+
+
+        another reason you don't have to complicate the names of your exceptions is [as follows]:
+        anyone who's reading your code see the thing right after either a `raise` or an `except`
+        - it's gotta be an exception!
+        (so adding the word `Exception` to the name of the class doesn't help)
+
+
 
     "[Python] Standard Library has got some rusty corners
     but it's a pretty good example how you should do things."
