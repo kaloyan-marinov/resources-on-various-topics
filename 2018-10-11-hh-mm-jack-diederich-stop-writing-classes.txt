@@ -234,27 +234,44 @@ transcript:
 
 
 
-        ...:
-        is subclassing the built-in exceptions still overkill or ... more acceptable?
-        ... from the ... of, if you just catch all `KeyError`s,
-        you're gonna catch errors you don't intend to catch.
+            ...:
+            is subclassing the built-in exceptions still overkill or ... more acceptable?
+            ... from the ... of, if you just catch all `KeyError`s,
+            you're gonna catch errors you don't intend to catch.
 
-        JD:
-        I don't use custom Exceptions until I need to ...
-        define your own exceptions only when you have to
+            JD:
+            I don't use custom Exceptions until I need to ...
+            define your own exceptions only when you have to
         
 
 
-    examples when class implementations are warranted
+    Sometimes you do want a class
+    
+        classes are great for things that classes are great for
 
-        - a bundle of mutable data
-          & a bunch of related functions
+        [namely,] when you have
+        a bundle of mutable data
+        and
+        a bunch of related functions that you want to use with that data,
+        then yes - classes are the right thing to do
 
-        "there's about 10 methods in the `heapq` module &
-        they all act on the same heap -
-        so their first argument is always ...
-        the same thing, which ... implies:
-        yes, this actually is a class."
+
+
+        you don't have to do this much in your day-to-day,
+        because if you're pulling something from the [Python] Standard Library,
+        someone else has already done it for you
+
+
+
+        there is one case in the [Python] Standard Library where this isn't true,
+        which is the `heapq` module
+
+            there's about 10 methods in the `heapq` module
+            and
+            they all act on the same heap,
+            so their first argument is always ... the same thing,
+            which ... implies:
+            yes, this actually is a class
 
 
 
