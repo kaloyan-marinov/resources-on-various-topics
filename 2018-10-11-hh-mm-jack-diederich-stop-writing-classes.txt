@@ -16,11 +16,22 @@ source:
 
 transcript:
 
+    I don't mean to disappoint,
+    but I'm actually going to agree with everything that Raymond [Hettinger] just said
+
+
+
     [
     recall the Zen of Python
-
-           written by Tim Peters
     ]
+    Simple is better than complex.
+    Flat is better than nested.
+    Readability counts.
+    If the implementation is hard to explain, it's a bad idea.
+    If the implementation is easy to explain, it may be a good idea.
+
+    all of these points say:
+    don't do hard things, do easy things
 
         - don't do hard things in the 1st place,
           do easy things
