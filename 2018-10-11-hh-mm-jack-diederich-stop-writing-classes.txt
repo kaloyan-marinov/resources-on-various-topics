@@ -104,7 +104,11 @@ transcript:
 
 
 
-    benefits of classes
+    [
+    if you have a Computer Science degree,
+    it is highly likely that
+    you were taught that classes give us the following lovely things:
+    ]
 
         - separation of concerns
 
@@ -116,10 +120,16 @@ transcript:
 
 
 
-        "I haven't used these words in 15 years."
+        I haven't used those words in 15 years
+        (since I graduated).
 
-        "People mean different things when they use them.
-        It's not useful for furthering conversation."
+        Anytime you hear someone using one of those words,
+        they're trying to pull a fast one on you.
+
+        It just doesn't come up.
+        And even if it does come up,
+        people mean different things when they use them.
+        It's not useful for furthering conversation.
 
 
 
