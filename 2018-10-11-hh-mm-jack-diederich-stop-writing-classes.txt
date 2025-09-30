@@ -275,16 +275,22 @@ transcript:
 
 
 
-    ```
-    class Flow(object):
-        "Base class for all flow objects."
-        pass
-    ```
+    Classes encourage atrocities
 
-    ```
-    class Error(Exception):
-        pass
-    ```
+        Oauth2 implementation
+
+        htttps://code.google.com/p/google-api-python-client/source/browse
+
+        ```python
+        class Flow(object):
+            """Base class for all Flow objects."""
+            pass
+        ```
+
+        ```python
+        class Error(Exception):
+            pass
+        ```
 
 
 
