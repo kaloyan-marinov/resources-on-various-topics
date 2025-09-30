@@ -76,14 +76,31 @@ transcript:
     """
 
 
+    
+    this is the biggest overuse of classes you see out in the wild:
+    ```python
+    class Greeting(object):
 
-    examples of class implementations
-    which shouldn't be classes at all
+        def __init__(self, greeting='hello'):
+            self.greeting = greeting
+        
+        def greet(self, name):
+            return "%s! %s" % (self.greeting, name)
+    
 
-        - a class which has 2 methods
-          one of which is __init__
+    greeting = Greeting('hola')
+    print greeting.greet('bob')
+    ```
 
-          (-> instantiate once + use once + throw away)
+    this is _not_ a class!
+    it looks like a class...
+    [but] the signature of "this shouldn't be a class" is that
+    it has 2 methods, one of which is `__init__`
+
+    anyitime you start aliasing your classes
+    to just intantiate them once, use them once, and then throw them away,
+    in your brain you should be thinking,
+    "Oh, I can refactor that - it can be simpler! Much simpler!"
 
 
 
