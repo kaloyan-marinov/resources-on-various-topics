@@ -149,7 +149,7 @@ transcript:
     class MuffinHash(dict):
         pass
     
-    
+
     d = MuffinMail.MuffinHash.MuffinHash(foo=3)
     ```
 
@@ -161,12 +161,16 @@ transcript:
         "ciriticism of the design process"
 
 
-    "To echo what Raymond [Hettinger] said, ...
-    namespaces are not for creating taxonomies, ...
-    namespaces are for preventing name collisions.
-    If you have a deep hierarchy,
-    you are not doing anyone any favors...
-    The [Python] Standard Library has a very flat namespace."
+    Namespaces are there to help
+
+        To echo what Raymond [Hettinger] said, ...
+        namespaces are not for creating taxonomies, ...
+        namespaces are for preventing name collisions.
+        
+        If you have a deep hierarchy,
+        you are not doing anyone any favors...
+
+        The [Python] Standard Library has a very flat namespace.
 
 
 
