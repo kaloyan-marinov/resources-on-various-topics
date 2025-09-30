@@ -1,7 +1,10 @@
 {
-  "editor.rulers": [
-    88, 100
-  ],
+  "editor.rulers": [88, 100],
+
+  "editor.formatOnSave": true,
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
   // Controls if suggestions should be accepted 'Enter' - in addition to 'Tab'.
   // Helps to avoid ambiguity between inserting new lines or accepting suggestions.

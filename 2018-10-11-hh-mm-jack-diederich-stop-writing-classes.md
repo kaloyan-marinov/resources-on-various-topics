@@ -9,18 +9,15 @@
     [by Jack Diederich, a Python core developer]
     )
 
-
-
 # Transcript
 
 I don't mean to disappoint,
 but I'm actually going to agree with everything that Raymond [Hettinger] just said
 
-
-
 [
 recall the Zen of Python
 ]
+
 ```
 Simple is better than complex.
 Flat is better than nested.
@@ -36,13 +33,11 @@ don't do hard things, do easy things
 
 [what the preceding talk by Raymond Hettinger was about]
 
-    classes can be very complicated
+- classes can be very complicated
 
-    he laid out some principles
-    how you should figure out
-    what you shouldn't be doing
-
-
+- he laid out some principles
+  how you should figure out
+  what you shouldn't be doing
 
 [what this talk is about]
 
@@ -63,26 +58,25 @@ don't do hard things, do easy things
     (b)
     revert complications later
 
+---
 
-
-[Jack Diederich]
 this is what I tell the guys at work all the time:
-"""
-I hate code and I want as little of it as possible in our product.
-We ship features, we do not ship code.
-We don't have customers because we have lots of code;
-we have customers because we have lots of features.
-"""
 
+> I hate code and I want as little of it as possible in our product.
+> We ship features, we do not ship code.
+> We don't have customers because we have lots of code;
+> we have customers because we have lots of features.
 
+---
 
 this is the biggest overuse of classes you see out in the wild:
+
 ```python
 class Greeting(object):
 
     def __init__(self, greeting='hello'):
         self.greeting = greeting
-    
+
     def greet(self, name):
         return "%s! %s" % (self.greeting, name)
 
@@ -101,7 +95,7 @@ to just intantiate them once, use them once, and then throw them away,
 in your brain you should be thinking,
 "Oh, I can refactor that - it can be simpler! Much simpler!"
 
-
+---
 
 [
 if you have a Computer Science degree,
@@ -130,18 +124,18 @@ you were taught that classes give us the following lovely things:
     people mean different things when they use them.
     It's not useful for furthering conversation.
 
-
+---
 
 lots of you use 3rd-party APIs in your day-to-day job
 
 anytime you have to use someone else's code,
 the first thing you have to do is read it
 
-
+---
 
 The overuse of classes...
-lots of time people think you might need something later
-- you don't.
+lots of time people think you might need something later -
+you don't.
 Or you can just do it later; if it comes up, you know, do it.
 
 ```python
@@ -152,19 +146,20 @@ class MuffinHash(dict):
 d = MuffinMail.MuffinHash.MuffinHash(foo=3)
 ```
 
+---
 
 Namespaces are there to help
 
     To echo what Raymond [Hettinger] said, ...
     namespaces are not for creating taxonomies, ...
     namespaces are for preventing name collisions.
-    
+
     If you have a deep hierarchy,
     you are not doing anyone any favors...
 
     The [Python] Standard Library has a very flat namespace.
 
-
+---
 
 exceptions are overused
 
@@ -172,7 +167,7 @@ exceptions are overused
     you should be thinking,
     "What am I doing this for?"
 
-
+---
 
 guidelines for naming exceptions appropriately
 
@@ -204,7 +199,7 @@ guidelines for naming exceptions appropriately
     - it's gotta be an exception!
     (so adding the word `Exception` to the name of the class doesn't help)
 
-
+---
 
 [The Python] Standard Library has got some rusty corners
 but it's a pretty good example of how you should do things.
@@ -224,7 +219,7 @@ but it's a pretty good example of how you should do things.
     you probably don't
     (because the Python Standard Library gets along quite fine with just 165.)
 
-
+---
 
 Sometimes you do want a class
 
@@ -254,7 +249,7 @@ Sometimes you do want a class
         which ... implies:
         yes, this actually is a class
 
-
+---
 
 Classes encourage atrocities
 
@@ -273,13 +268,13 @@ Classes encourage atrocities
         pass
     ```
 
-
+---
 
 Conway's game of life
 
     [see the source video for an example of how to avoid classes altogether]
 
-
+---
 
 Conclusion
 
@@ -289,12 +284,7 @@ Conclusion
 
     (3) "Refactor relentlessly."
 
-
-
-
-Q & A
-
-
+# Q & A
 
 Raymond Hettinger:
 What do you think the social forces are that drive people to write "the ... Muffin-style code"?
@@ -305,16 +295,15 @@ It's ex-Java people,
 it's what they teach in CS curriculum.
 It took years to beat it out of me.
 
+---
 
-
-[audience member B]:
-...
+[audience member B]: ...
 
 Jack Diederich:
 Yes,
 it's a form of premature optimization.
 
-
+---
 
 [audience member C]:
 ... `class MuffinHash(dict)` ...
@@ -340,10 +329,10 @@ and
 then you notice later that they weren't good reasons,
 you can go back & refactor it out
 
-
+---
 
 [audience member D]:
-is subclassing the built-in exceptions still overkill 
+is subclassing the built-in exceptions still overkill
 or
 is that more acceptable?
 ...
@@ -357,7 +346,7 @@ I don't use custom Exceptions until I need to ...
 [indeed, the described scenario can be problematic, but still:]
 define your own exceptions only when you have to
 
-
+---
 
 [audience member E]:
 I've seen a lot of the pattern of
@@ -367,8 +356,8 @@ they just hold a bunch of constants.
 How do you feel about those?
 
 Jack Diederich:
-... it's sometimes useful to use classes as tiny namespaces
-- when you don't want to add a module ...
+... it's sometimes useful to use classes as tiny namespaces -
+[e.g.] when you don't want to add a module ...
 
 it's even useful to hold functions in ...
 
