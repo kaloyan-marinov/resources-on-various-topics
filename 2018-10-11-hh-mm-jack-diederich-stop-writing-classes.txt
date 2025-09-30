@@ -140,16 +140,17 @@ transcript:
 
 
 
-    "The overuse of classes,
-    lots of time people think you might need sth later
-    - you don't ... or you can just do it later -
-    if it comes up, you know, do it."
-
-
+    The overuse of classes...
+    lots of time people think you might need something later
+    - you don't.
+    Or you can just do it later; if it comes up, you know, do it.
 
     ```python
     class MuffinHash(dict):
         pass
+    
+    
+    d = MuffinMail.MuffinHash.MuffinHash(foo=3)
     ```
 
         JD:
