@@ -1,0 +1,164 @@
+2018-10-11-hh-mm-jack-diederich-stop-writing-classes.txt
+
+
+
+source:
+    (
+    yt
+    >>
+    Next Day Video
+    >>
+    Stop Writing Classes
+    [by Jack Diederich, a Python core developer]
+    )
+
+
+
+transcript:
+
+    [
+    recall the Zen of Python
+
+           written by Tim Peters
+    ]
+
+        - don't do hard things in the 1st place,
+          do easy things
+
+        - resolve complications later
+
+
+
+    "I hate code and I want as little of it in our product"
+    <-- "We ship features, we do not ship code."
+
+
+
+    examples of class implementations
+    which shouldn't be classes at all
+
+        - a class which has 2 methods
+          one of which is __init__
+
+          (-> instantiate once + use once + throw away)
+
+
+
+    benefits of classes
+
+        - separation of concerns
+
+        - decoupling
+
+        - encapsulation
+
+        - implementation hiding
+
+
+
+        "I haven't used these words in 15 years."
+
+        "People mean different things when they use them.
+        It's not useful for furthering conversation."
+
+
+
+    3rd-party APIs
+
+        "The first thing you have to do is read it."
+
+
+
+    "The overuse of classes,
+    lots of time people think you might need sth later
+    - you don't ... or you can just do it later -
+    if it comes up, you know, do it."
+
+
+
+    ```python
+    class MuffinHash(dict):
+        pass
+    ```
+
+
+
+    "To echo what Raymond [Hettinger] said, ...
+    namespaces are not for creating taxonomies, ...
+    namespaces are for preventing name collisions.
+    If you have a deep hierarchy,
+    you are not doing anyone any favors...
+    The [Python] Standard Library has a very flat namespace."
+
+
+
+    - exceptions are overused
+
+    "Anytime you type a class,
+    you should be thinking,
+    'What am I doing this for?'"
+
+    good:
+    EmptyBeer
+    BeerError
+    BeerNotFound
+
+    bad:
+    EmptyBeerNotFoundError
+
+    "You can just use [Python] Standard Library exceptions. People understand them."
+
+    "[Python] Standard Library has got some rusty corners
+    but it's a pretty good example how you should do things."
+
+        - 200k SLOC
+        - 200 top-level modules
+        - averages 10 files per package
+        - defines 165 Exceptions
+
+
+
+        "So once again -
+        any time you think you need to write an exception,
+        you probably don't."
+
+
+
+    examples when class implementations are warranted
+
+        - a bundle of mutable data
+          & a bunch of related functions
+
+        "there's about 10 methods in the `heapq` module &
+        they all act on the same heap -
+        so their first argument is always ...
+        the same thing, which ... implies:
+        yes, this actually is a class."
+
+
+
+    ```
+    class Flow(object):
+        "Base class for all flow objects."
+        pass
+    ```
+
+    ```
+    class Error(Exception):
+        pass
+    ```
+
+
+
+    "Conway's game of life"
+    --> "Conway's really simple game of life"
+
+
+
+    Conclusion
+
+    (1) "If you see a class with 2 methods..., it's not a class."
+
+    (2) "Don't make new exceptions when you don't need to."
+
+    (3) "Refactor relentlessly."
