@@ -81,6 +81,12 @@ transcript:
         pass
     ```
 
+        JD:
+        "If you think you had good reasons for it
+        and then you notice later that they weren't good reasons,
+        you can go back & refactor it out."
+
+        "ciriticism of the design process"
 
 
     "To echo what Raymond [Hettinger] said, ...
@@ -124,6 +130,17 @@ transcript:
 
 
 
+        ...:
+        is subclassing the built-in exceptions still overkill or ... more acceptable?
+        ... from the ... of, if you just catch all `KeyError`s,
+        you're gonna catch errors you don't intend to catch.
+
+        JD:
+        I don't use custom Exceptions until I need to ...
+        define your own exceptions only when you have to
+        
+
+
     examples when class implementations are warranted
 
         - a bundle of mutable data
@@ -162,3 +179,36 @@ transcript:
     (2) "Don't make new exceptions when you don't need to."
 
     (3) "Refactor relentlessly."
+
+
+---------------------------
+
+
+
+    RH:
+    What do you think the social forces are that drive people to write "the ... Muffin-style code"?
+
+    JD:
+    It's ex-Java people,
+    it's what they teach in CS curriculum...
+
+    ...
+
+    JD:
+    Yes,
+    it's a form of premature optimization.
+
+    ...:
+    ... classes as containers for constants -
+    they don't actually do anything.
+    They just hold a bunch of constants.
+    How do you feel about those?
+
+    JD:
+    ... it's sometimes useful to use classes as tiny namespaces -
+    when you don't want to add a module ...
+
+    it's even useful to hold functions in ...
+    so if you want a small namespace with some constants in it
+    & maybe a small bag of functions,
+    then classes are fine
