@@ -214,19 +214,23 @@ transcript:
 
 
 
-    "[Python] Standard Library has got some rusty corners
-    but it's a pretty good example how you should do things."
+    [The Python] Standard Library has got some rusty corners
+    but it's a pretty good example of how you should do things.
 
-        - 200k SLOC
-        - 200 top-level modules
-        - averages 10 files per package
-        - defines 165 Exceptions
+        200k SLOC
+
+        200 top-level modules
+
+        averages 10 files per package
+
+        it only defines 165 Exceptions
 
 
 
-        "So once again -
+        So once again:
         any time you think you need to write an exception,
-        you probably don't."
+        you probably don't
+        (because the Python Standard Library gets along quite fine with just 165.)
 
 
 
