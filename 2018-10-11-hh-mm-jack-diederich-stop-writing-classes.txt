@@ -133,9 +133,10 @@ transcript:
 
 
 
-    3rd-party APIs
+    lots of you use 3rd-party APIs in your day-to-day job
 
-        "The first thing you have to do is read it."
+    anytime you have to use someone else's code,
+    the first thing you have to do is read it
 
 
 
