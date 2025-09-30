@@ -66,8 +66,14 @@ transcript:
 
 
 
-    "I hate code and I want as little of it in our product"
-    <-- "We ship features, we do not ship code."
+    [Jack Diederich]
+    this is what I tell the guys at work all the time:
+    """
+    I hate code and I want as little of it as possible in our product.
+    We ship features, we do not ship code.
+    We don't have customers because we have lots of code;
+    we have customers because we have lots of features.
+    """
 
 
 
