@@ -33,10 +33,36 @@ transcript:
     all of these points say:
     don't do hard things, do easy things
 
-        - don't do hard things in the 1st place,
-          do easy things
 
-        - resolve complications later
+
+    [what the preceding talk by Raymond Hettinger was about]
+
+        classes can be very complicated
+
+        he laid out some principles
+        how you should figure out
+        what you shouldn't be doing
+
+
+    
+    [what this talk is about]
+
+        (a)
+        don't do hard things in the 1st place,
+        do easy things
+
+            all the places where people go wrong
+            and
+            how you can just not do that at all
+
+            you end up doing that anyway
+            - even when you're trying to avoid it -
+            so this talk [is also going to explain]
+            how to notice when you've gone down the wrong path
+            [and, from there, how to]
+
+        (b)
+        revert complications later
 
 
 
