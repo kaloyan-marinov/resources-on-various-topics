@@ -14,9 +14,7 @@
 I don't mean to disappoint,
 but I'm actually going to agree with everything that Raymond [Hettinger] just said
 
-[
-recall the Zen of Python
-]
+[recall the Zen of Python:]
 
 ```
 Simple is better than complex.
@@ -26,8 +24,8 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 ```
 
-all of these points say:
-don't do hard things, do easy things
+All of these points say:
+don't do hard things, do easy things.
 
 ---
 
@@ -63,8 +61,11 @@ don't do hard things, do easy things
 this is what I tell the guys at work all the time:
 
 > I hate code and I want as little of it as possible in our product.
+>
 > We ship features, we do not ship code.
+>
 > We don't have customers because we have lots of code;
+>
 > we have customers because we have lots of features.
 
 ---
@@ -85,12 +86,12 @@ greeting = Greeting('hola')
 print greeting.greet('bob')
 ```
 
-this is _not_ a class!
-it looks like a class...
+This is _not_ a class!
+It looks like a class...
 [but] the signature of "this shouldn't be a class" is that
-it has 2 methods, one of which is `__init__`
+it has 2 methods, one of which is `__init__`.
 
-anyitime you start aliasing your classes
+Anyitime you start aliasing your classes
 to just intantiate them once, use them once, and then throw them away,
 in your brain you should be thinking,
 "Oh, I can refactor that - it can be simpler! Much simpler!"
@@ -103,39 +104,38 @@ it is highly likely that
 you were taught that classes give us the following lovely things:
 ]
 
-    - separation of concerns
+- separation of concerns
 
-    - decoupling
+- decoupling
 
-    - encapsulation
+- encapsulation
 
-    - implementation hiding
+- implementation hiding
 
+I haven't used those words in 15 years
+(since I graduated).
+Anytime you hear someone using one of those words,
+they're trying to pull a fast one on you.
+It just doesn't come up.
 
-
-    I haven't used those words in 15 years
-    (since I graduated).
-
-    Anytime you hear someone using one of those words,
-    they're trying to pull a fast one on you.
-
-    It just doesn't come up.
-    And even if it does come up,
-    people mean different things when they use them.
-    It's not useful for furthering conversation.
+And even if [those terms do] come up,
+people mean different things when they use them.
+[They're] not useful for furthering conversation.
 
 ---
 
-lots of you use 3rd-party APIs in your day-to-day job
+Lots of you use 3rd-party APIs in your day-to-day job.
 
-anytime you have to use someone else's code,
-the first thing you have to do is read it
+Anytime you have to use someone else's code,
+the first thing you have to do is read it.
 
 ---
 
-The overuse of classes...
-lots of time people think you might need something later -
+[An example of] The overuse of classes...
+
+Lots of time people think you might need something later -
 you don't.
+
 Or you can just do it later; if it comes up, you know, do it.
 
 ```python
@@ -150,74 +150,73 @@ d = MuffinMail.MuffinHash.MuffinHash(foo=3)
 
 Namespaces are there to help
 
-    To echo what Raymond [Hettinger] said, ...
-    namespaces are not for creating taxonomies, ...
-    namespaces are for preventing name collisions.
+To echo what Raymond [Hettinger] said, ...
+namespaces are not for creating taxonomies, ...
+namespaces are for preventing name collisions.
 
-    If you have a deep hierarchy,
-    you are not doing anyone any favors...
+If you have a deep hierarchy,
+you are not doing anyone any favors...
 
-    The [Python] Standard Library has a very flat namespace.
+The [Python] Standard Library has a very flat namespace.
 
 ---
 
 exceptions are overused
 
-    anytime you type a class,
-    you should be thinking,
-    "What am I doing this for?"
+Anytime you type a class,
+you should be thinking,
+"What am I doing this for?"
 
 ---
 
 guidelines for naming exceptions appropriately
 
-    bad:
-    `EmptyBeerNotFoundError`
+- bad:
 
-    better:
-    `EmptyBeer`
-    `BeerError`
-    `BeerNotFound`
+  `EmptyBeerNotFoundError`
 
-    best:
-    You can just use [Python] Standard Library exceptions.
-    People understand them.
-    Unless you want to catch a very specific condition,
-    `LookupError` is just as good as anything else.
+- better:
 
+  `EmptyBeer`
 
+  `BeerError`
 
-    if you get an email with a traceback in it,
-    you're going to have to go read it anyway
-    and
-    it doesn't really matter what the exception was named
+  `BeerNotFound`
 
+- best:
 
+  You can just use [Python] Standard Library exceptions.
+  People understand them.
+  Unless you want to catch a very specific condition,
+  `LookupError` is just as good as anything else.
 
-    another reason you don't have to complicate the names of your exceptions is [as follows]:
-    anyone who's reading your code see the thing right after either a `raise` or an `except`
-    - it's gotta be an exception!
-    (so adding the word `Exception` to the name of the class doesn't help)
+If you get an email with a traceback in it,
+you're going to have to go read it anyway
+and
+it doesn't really matter what the exception was named
+
+Another reason you don't have to complicate the names of your exceptions is [as follows]:
+anyone who's reading your code [understands] that
+the thing right after either a `raise` or an `except` [has got to] be an exception!
+(So, adding the word `Exception` to the name of the class doesn't help.)
 
 ---
 
 [The Python] Standard Library has got some rusty corners
 but it's a pretty good example of how you should do things.
 
-    200k SLOC
+- 200k SLOC
 
-    200 top-level modules
+- 200 top-level modules
 
-    averages 10 files per package
+- averages 10 files per package
 
-    it only defines 165 Exceptions
+- it only defines 165 Exceptions
 
-
-
-    So once again:
-    any time you think you need to write an exception,
-    you probably don't
-    (because the Python Standard Library gets along quite fine with just 165.)
+So once again:
+any time you think you need to write an exception,
+you probably don't
+(because the Python Standard Library gets along quite fine with just 165).
 
 ---
 
