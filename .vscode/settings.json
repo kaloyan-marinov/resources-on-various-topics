@@ -1,7 +1,10 @@
 {
   "editor.rulers": [88, 100],
 
-  "editor.formatOnSave": true,
+  // "markdown.preview.scrollPreviewWithEditor": false,
+  // "markdown.preview.scrollEditorWithPreview": false,
+
+  // "editor.formatOnSave": true,
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
