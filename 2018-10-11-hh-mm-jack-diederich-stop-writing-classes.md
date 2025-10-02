@@ -87,11 +87,11 @@ but I'm actually going to agree with everything that Raymond [Hettinger] just sa
            self.greeting = greeting
 
        def greet(self, name):
-           return "%s! %s" % (self.greeting, name)
+           return f"{self.greeting}, {name}!"
 
 
-   greeting = Greeting('hola')
-   print greeting.greet('bob')
+   greeting = Greeting('Hello')
+   print(greeting.greet('Bob'))
    ```
 
    This is _not_ a class!
