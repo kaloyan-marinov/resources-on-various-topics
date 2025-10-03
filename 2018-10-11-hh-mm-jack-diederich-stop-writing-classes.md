@@ -15,19 +15,7 @@
 
 I don't mean to disappoint,
 but I'm actually going to agree with everything that Raymond [Hettinger] just said
-
-<div style="margin-left: 20px;">
-   [
-   That refers to the preceding talk, which was given by Raymond Hettinger.
-   The talk can be gleaned from [the schedule of PyCon US 2012](
-        https://us.pycon.org/2012/schedule/
-   );
-   for convenience,
-   that talk is titled "The Art of Subclassing"
-   and
-   can be seen at https://www.youtube.com/watch?v=miGolgp9xq8 .
-   ]
-</div>
+[in his talk "The Art of Subclassing", which can be seen at https://www.youtube.com/watch?v=miGolgp9xq8 ].
 
 
 
