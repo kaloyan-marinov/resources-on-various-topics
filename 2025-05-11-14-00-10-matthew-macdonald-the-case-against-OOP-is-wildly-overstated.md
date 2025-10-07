@@ -120,4 +120,45 @@
 
    ## The Expectation Mismatch of Inheritance
 
-   
+   Some of the sharpest attacks launched on OOP target inheritance.
+   Critics point out the very real «fragile base class problem»,
+   where a codebase bcomes frozen in time
+   thanks to subtle dependencies between child classes and their parents.
+
+   The solution to
+   the «fragile base class problem»
+   and
+   other inheritance hangovers is surprisingly simple -
+   don't use it.
+   All the cautionary tales you've heard are true.
+
+   When inheritance makes sense is in framework design -
+   in other words, as a tool for the people who build the tools that you use.
+   The .NET and Java class libraries would be a far poorer and less organized place
+   without a rigorous inheritance hierarchy tying things together.
+   But creating and maintaining this type of framework is a massive architectural task.
+   It's not the kind of thing you want to undertake
+   if you're a fast-moving customer-focused team of agile developers.
+   And here's a dirty secret -
+   you probably won't get it right unless you do it wrong a few times first.
+
+   In other words, inheritance is
+   a great feature when you use it indirectly,
+   but rat poison squared when use it extend your own classes.
+   And you don't need it.
+   If you want to reuse functionality,
+   containment and delegation work perfectly well.
+   And if you want to standardize different classes,
+   that's what interfaces are for.
+
+   ... OOP ... doesn't prevent you from appyling the wrong solution to a problem.
+   It gives you a set of tools that can be enjoyed or abused.
+   The rest is up to you.
+
+   There's one criticism leveled against OOP that's probably true.
+   OOP may not be dead, but its moment of total world domination is fading...
+   pure OOP is shifting to make room for so-called multi-paradigm languages like Go and Rust -
+   languages that have a slimmer set of object-oriented features and avoid some of the traditional OOP baggage.
+   Sometime in the next decade we'll know these languages have truly arrived,
+   when we see them featured in their own developer take-downs.
+   ...
