@@ -11,6 +11,8 @@
 
 # Notes
 
+
+
    ## Introduction
 
    object-oriented programming (OOP) ... certainly has some enemies
@@ -26,6 +28,8 @@
    But are these crimes really an unavoidable part of OOP?
 
    ...
+
+
 
    ## The Original Sin
 
@@ -78,4 +82,42 @@
    or
    one that's more object-oriented,
    you should pick the simplest approach that meets the needs of your project.
+
+
+
+
+   ## Design is Difficult
+
+   If OOP is difficult to do right,
+   that's at least partly because
+   software design is hard to do right,
+   no matter what tools you use.
+
+   In fact, OOP is much less prescriptive in design than many people believe.
+   Object-oriented languages give you a set of tools for using objects ...
+   But they don's say much about how you should apply these objects to a problem.
+   This is a great and deliberate ambiguity.
+
+   The gap between theory and practice has fueled the interest in design patterns...
+   Unfortunately, design patterns can easily become
+   a way to smuggle in overly complex OOP design
+   under a veneer of respectability.
+
+   How do you avoid this trap?
+   Focus on the rock-solid principles of good programming ...
+
+   - DRY (Don't Repeat Yourself)
+   - YAGNI (don't build it if You Ain't Gonna Need It)
+   - the Law of Demeter (restrict what classes must know about each other)
+   - continuous refactoring
+   - valuing simplicity and readability above all else
+
+   Start with these ... principles ...
+   and
+   let your design take shape in that environment.
+
+
+
+   ## The Expectation Mismatch of Inheritance
+
    
