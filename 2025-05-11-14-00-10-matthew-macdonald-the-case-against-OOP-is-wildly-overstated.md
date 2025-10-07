@@ -20,7 +20,7 @@
    What all these rants have in common is that they
    point out (rightfully) some of the pitfalls in modern software development
    and then
-   concluce (wrongfully) that this indicates a terrible rot at the core of the programming world
+   conclude (wrongfully) that this indicates a terrible rot at the core of the programming world
 
    Yes, object-oriented programming doesn't look so great
    if you conflate it with
@@ -122,7 +122,7 @@
 
    Some of the sharpest attacks launched on OOP target inheritance.
    Critics point out the very real «fragile base class problem»,
-   where a codebase bcomes frozen in time
+   where a codebase becomes frozen in time
    thanks to subtle dependencies between child classes and their parents.
 
    The solution to
@@ -144,7 +144,7 @@
 
    In other words, inheritance is
    a great feature when you use it indirectly,
-   but rat poison squared when use it extend your own classes.
+   but rat poison squared when use it to extend your own classes.
    And you don't need it.
    If you want to reuse functionality,
    containment and delegation work perfectly well.
