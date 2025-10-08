@@ -115,7 +115,7 @@
    
      - separation of concerns
    
-     - decoupling
+     - decoupling (including «loose coupling» and «strong cohesion»)
    
      - encapsulation
    
