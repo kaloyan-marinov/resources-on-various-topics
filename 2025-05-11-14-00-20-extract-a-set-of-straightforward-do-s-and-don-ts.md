@@ -8,16 +8,15 @@
 
    ## Introduction
 
-   OOP is much less prescriptive in design than many people believe.
+   Object-oriented programming (OOP) is much less prescriptive in design than many people believe.
    Object-oriented languages give you a set of tools for using objects ...
    But they don's say much about how you should apply these objects to a problem.
    This is a ... deliberate ambiguity.
 
-   An experienced programmer knows that, when choosing between
-   a solution that's less object-oriented
-   or
-   one that's more object-oriented,
-   you should pick the simplest approach that meets the needs of your project.
+   The practice of OOP is not an exact science.
+   Instead, it is more akin to an art form.
+   
+   Consequently, the practice of OOP is subjective.
 
    > Deciding how to break down a programming problem into objects
    > is part of
@@ -74,3 +73,11 @@
      under a veneer of respectability
 
    - 
+
+   ## Conclusion
+
+   An experienced programmer knows that, when choosing between
+   a solution that's less object-oriented
+   or
+   one that's more object-oriented,
+   you should pick the simplest approach that meets the needs of your project.
