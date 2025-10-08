@@ -11,10 +11,10 @@
 
    ## Introduction
 
-   Object-oriented programming (OOP) is much less prescriptive in design than many people believe.
-   Object-oriented languages give you a set of tools for using objects ...
-   But they don's say much about how you should apply these objects to a problem.
-   This is a ... deliberate ambiguity.
+   Object-oriented programming (OOP) is much less prescriptive than many people believe.
+   Object-oriented languages give you a set of tools for creating and using objects.
+   But they don's say much about how you should apply those tools to a problem.
+   This is a deliberate ambiguity.
 
    Furthermore,
    the practice of OOP is not an exact science;
@@ -22,13 +22,15 @@
 
    The art of practicing OOP can be summarized as follows:
 
-   (a) deciding <u>whether</u> or not OOP <u>has to</u> be used at all;
+   (a) giving an honest answer to the "What problem are we trying to solve?" question;
 
-   (b) deciding <u>how</u> to break down a programming problem into objects.
+   (b) deciding <u>whether</u> or not OOP <u>has to</u> be used at all;
+
+   (c) deciding <u>how</u> to break down a programming problem into objects.
 
 
 
-   ## What is an object?
+   ## What is an «object»?
 
    Many introductory texts blur the line between
    code constructs and real-world objects, by presenting examples with:
@@ -39,7 +41,7 @@
    
    - hopelessly tied-together groups of `Person` and `Family` objects.
 
-   A better description of objects is - like many honest answers - a little vague ...:
+   A better description of objects is - like many honest answers - a little vague:
 
    > An object is a programming construct
    > that lets you pack together data and functionality in a somewhat reusable package.
@@ -52,29 +54,40 @@
 
    Start with these principles:
 
-   - valuing simplicity and readability above all else
+   - <u>**valuing simplicity and readability above all else**</u>
 
-   - [write tests for your codebase, focusing not on code coverage but on meaningful assertions]
+   - <u>**write tests for your codebas**</u>
+   
+     Focus not on code coverage but on meaningful assertions.
 
-   - YAGNI (don't build it if You Ain't Gonna Need It)
+   - <u>**YAGNI**</u> (You Ain't Gonna Need It)
 
-   - continuous refactoring
+     Don't build a new code construct
+     unless you're sure there will be a concrete use case for it within the next 2 weeks.
+
+   - <u>**continuous refactoring**</u>
 
    - DRY (Don't Repeat Yourself)
 
-   - the Law of Demeter (restrict what classes must know about each other)
+   - the Law of Demeter 
+   
+     Restrict what classes must know about each other.
+
+   > Choosing to apply OOP techniques to any given problem
+   > is less important than
+   > upholding the above-mentioned principles.
 
 
 
    # Don'ts
 
-   - The fact that something sounds like an object does not automatically mean that
+   - The fact that something sounds like an object <u>**does not**</u> automatically mean that
      it should be an object in your program.
 
-   - inheritance makes sense is in framework design -
+   - Inheritance makes sense in framework design -
      in other words, as a tool for the people who build the tools that you use.
 
-     you don't need inheritance
+     You <u>**don't**</u> need inheritance
      if you're a fast-moving customer-focused team of agile developers.
    
      - If you want to reuse functionality,
@@ -83,11 +96,13 @@
      - If you want to standardize different classes,
        that's what interfaces are for.
 
-   - design patterns can easily become
+   - <u>**do not**</u> glorify «design patterns»
+   
+     they can easily become
      a way to smuggle in overly complex OOP design
      under a veneer of respectability
     
-   - do not glorify the following terms:
+   - <u>**do not**</u> glorify the following concepts:
    
      - separation of concerns
    
@@ -96,6 +111,8 @@
      - encapsulation
    
      - implementation hiding
+
+     - abstractions
 
      And even if those terms do come up,
      people mean different things when they use them.
@@ -110,9 +127,10 @@
 
    ## Conclusion
 
-   OOP ... doesn't prevent you from designing sub-optimal solutions to a problem.
+   OOP doesn't prevent you from creating sub-optimal solutions to a problem.
 
-   OOP gives you a set of tools that can be used or abused.
+   Bear in mind that
+   the set of tools which OOP gives you can be abused.
 
    An experienced programmer knows that, when choosing between
    a solution that's less object-oriented
