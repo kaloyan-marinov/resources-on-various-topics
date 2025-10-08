@@ -14,9 +14,11 @@
    Object-oriented programming (OOP) is much less prescriptive than many people believe.
    Object-oriented languages give you a set of tools for creating and using objects.
    But they don's say much about how you should apply those tools to a problem.
-   This is a deliberate ambiguity.
-
-   Furthermore,
+   
+   That means that
+   there is a large gray area
+   between OOP tools and the concrete practice of OOP.
+   And it is a fact of life that
    the practice of OOP is not an exact science;
    instead, it is more akin to an art form.
 
@@ -52,9 +54,11 @@
 
    ## Do's
 
-   Start with these principles:
+   Start with these principles,
+   (which are not specific to OOP but)
+   which apply to programming in general:
 
-   - <u>**valuing simplicity and readability above all else**</u>
+   - <u>**value simplicity and readability above all else**</u>
 
    - <u>**write tests for your codebas**</u>
    
@@ -66,6 +70,9 @@
      unless you're sure there will be a concrete use case for it within the next 2 weeks.
 
    - <u>**continuous refactoring**</u>
+
+     In order to achieve greater simplicity and better readability -
+     both in source code, and in test code.
 
    - DRY (Don't Repeat Yourself)
 
@@ -80,6 +87,8 @@
 
 
    # Don'ts
+
+   This section is specific to OOP.
 
    - The fact that something sounds like an object <u>**does not**</u> automatically mean that
      it should be an object in your program.
@@ -96,13 +105,13 @@
      - If you want to standardize different classes,
        that's what interfaces are for.
 
-   - <u>**do not**</u> glorify «design patterns»
+   - <u>**Do not**</u> glorify «design patterns».
    
-     they can easily become
+     They can easily become
      a way to smuggle in overly complex OOP design
-     under a veneer of respectability
+     under a veneer of respectability.
     
-   - <u>**do not**</u> glorify the following concepts:
+   - <u>**Do not**</u> glorify the following concepts:
    
      - separation of concerns
    
