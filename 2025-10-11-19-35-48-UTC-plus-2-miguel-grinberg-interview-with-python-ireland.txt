@@ -1,0 +1,175 @@
+2025-10-11-19-35-48-UTC-plus-2-miguel-grinberg-interview-with-python-ireland.txt
+
+
+
+source:
+    (
+        yt
+        >>
+        Miguel Grinberg
+        >>
+        Interview with Python Ireland
+    )
+    https://www.youtube.com/watch?v=pkDua8hTUfA
+
+
+
+transcript:
+
+    uh GitHub Copilot suggests Yeah it's not great  you know for any kind of professional work it's  
+
+    not great Okay I so
+
+    now you know we're all seeing  people who do vibe coding that's great right if  
+
+    you come from the bottom right and if you don't  know something and you're going to do something  
+
+    you know that doesn't have to be robust you  know the AI will be great right you're likely  
+
+    to get some results that you would not be able  to achieve yourself unless you spend a lot of   time learning right great for that
+
+
+
+    coming from  the other side right when you're experienced I  
+
+    don't really see a lot of value because the code  that
+
+
+        So think about this It was trained on all  
+
+        the code on GitHub right Right without regards  of being good code bad code It's just code right  
+
+        so the chances that you're going to get really  good code that will be equal to what you will  
+
+        write are you know really slim
+
+
+
+    And I'm every time  I look at a suggestion that GitHub Copilot offers  
+
+    I feel that I can do better And given that when  I'm working on code this is code that I'm going  
+
+    to have to maintain It's not throwaway code right
+
+
+
+    yeah So that the vibe coders can write throwaway  
+
+    code and get results and then they forget about it  and that seems reasonable for that
+
+
+
+    But in my case  
+
+    this is code that I'm going to have to maintain So  yes I don't really see at least today's you know  
+
+    today's models they're not able to provide you  know good support for a person like me
+
+
+
+    ... this is something that I read many  times People say that a coding AI is like you get  
+
+    an intern that is very happy to you know to help  you
+
+        That's great But this is an intern that has  
+
+        short-term memory loss right because every time  you open the chat to talk to this AI it doesn't  
+
+        remember anything It doesn't learn anything right
+
+
+
+        I really want a human intern that I can train Yeah  
+
+        I get better It gets better right that give me  that Give me an AI that learns Maybe I look at it
+
+
+
+    But but these you know this crop of stupid AIs  that don't have memory Yeah I I don't know I mean  
+
+    there's some use for them right I don't want to  you to be completely negative doesn't provide good  
+
+    use to me
+
+
+
+
+
+
+    That's interesting I mean yeah I mean  I've seen some of the results of vibe coding over  
+
+    the last couple years or you know some colleagues  of mine you know certainly one colleague of mine  
+
+    has seen some disasters and that has been brought  in
+
+        Oh they're awful Yeah I mean so and you know  
+
+        this is something interesting this this is not  something this is not a thought that came from me  
+
+        but I read somewhere and I think what we are going  to need going forward is we're going to need to be  
+
+        very good at code reviewing which is something  that we are not many people they're not used to  
+
+        review code in the same way that
+
+            now when we look  at a picture on Twitter or you know whatever you  
+
+            know if it's too good to be true we say yeah this  you know we were programmed to distrust pictures  
+
+            right because of the AI right so the same thing  is going to have to happen with code
+
+        You cannot  
+
+        take code that comes from an unknown source and  assume because it works that it's good and that  
+
+        you will be able to maintain it right you really  have to do a good review
+
+    That's a very good point  
+
+    I mean I people often do say that
+
+        it's harder to  read code than to write code sometimes
+
+        right ... it takes  a lot of skill ...
+
+        It's something that that people you know need to  be aware of going forward
+
+
+
+    ...
+    Maybe they'll find their way to the Flask  Mega-Tutorial the resources and you know start to  
+
+    go a bit deeper and and learn the craft themselves ...
+
+        which you are going to need if you  
+
+        need to review code even if if you end up using  AI as a helper you're going to have to make sure  
+
+        that the code that the AI is giving you at least  if you get paid to do the work right Yeah Right  
+
+
+
+        if you're doing this for work professionally I  don't see how you can trust blindly trust AI right  
+
+        you're going to have to learn and understand
+
+
+
+        So  basically you will need to be able to write what  
+
+        you're asking the AI to write for you ...
+
+
+
+    maybe  the AI with time eventually the AI will be able  
+
+    to do it faster than you That's possible right so  it may be good I may end up at some point decide  
+
+    I may decide that it works for me as well in that  capacity
+
+        but it definitely needs to be something  
+
+        that I intended to write in the first place 
+        if I'm  going to be on the hook to maintain that code and  
+
+        be responsible for it

@@ -1,0 +1,485 @@
+2025-06-29-12-33-24-UTC-plus-2-neetcodeIO-resource-titled--microservices-are-technical-debt.txt
+
+
+
+source:
+    (
+    yt
+    >>
+    NeetCodeIO
+    >>
+    Microservices are Technical Debt
+    )
+
+
+
+transcript:
+
+    ... my short
+
+    experience at Google made me realize that well if they have all this tooling already set up and they have like a
+
+    large team of dedicated sres that are handling all of this it's probably worth it at that point to ... stick with
+
+    microservices there's really no need to simplify like the architecture cuz we really didn't have to worry about those
+
+    kind of issues like those latency things - all that was abstracted away from us
+
+
+
+    Google has very mature tooling ...;
+    they've been they've been at this for longer than basically anybody[,]
+    so you would ... expect that their stuff works really well ...;
+    but also you probably can't take what happens at Google and right infer too much about
+    how to ... make that be advice for anyone else;
+
+    I ... really wanted to stick to ...
+        why would you take your monolithic application - doesn't really matter what language is written in -
+        where there's a single Deployable artifact
+        (
+        like one big binary,
+        one big ball of Python code, ...
+        it's ... one thing [and], inside of it, the modules talk to each other by making function calls
+        )
+        and,
+        when you want to change it, you just deploy the whole thing ...
+
+        what would make you ever want to do a microservice - or I hate the word «microservice», honestly - ...
+        what would ever want you to introduce the idea of making gpc's or rpc's network calls
+        instead of function calls? ...
+
+    ... I think that the answer usually works out like this:
+
+        you're cruising along in your monolith and everything's fine and then your company ... starts to get
+
+        bigger ..., your development team starts to get bigger, ... maybe your user base gets bigger, but ... the scaling of the traffic is not - I don't think - an issue
+
+            I think it's often cited as a reason to do [micro]services
+
+            ... I don't think it should be ...
+            if it is ... that[,] there's probably something very specific about that environment
+
+            but:
+
+                ... there are very high-scale monoliths out there
+
+        ... what probably starts to happen is:
+        you have a lot of people[;]
+        all while work on the same thing[;]
+        then they start stepping on each other not while writing the code
+
+            while rolling it out[,] you got to roll it out;
+            you cannot just flip the switch 
+            [b/c] in this day and age you never turn your software off
+
+            [in] traditional software engineering texts [have concepts such as] «maintenance windows» or whatever;
+            [but] it's like not of this era
+
+
+
+
+        I think this is the reason to do [micro]services ...:
+            you have a large engineering team
+            and
+            people are stepping on each other because you're changing it a lot
+
+
+    ... you can imagine other examples of ... why it would be worth talking over the network
+
+        ...
+
+    ...I would say like some surprising things that I think
+
+        that that I learned about this is like I actually think I think I've I've been fond of saying this to to my to my
+
+        colleagues who who all kind of groan when I say it now but um I think microservices are technical debt and I
+        Microservices are tech debt
+
+        say that intentionally because in in that I do think that they help you move faster at
+
+        first I think if you're you're you got a bunch of code running one place and somebody says you know what why don't
+
+    ...
+
+
+    I know a
+
+    lot of a lot of microservices theory talks about
+        like loose coupling
+        and
+        "oh what about fallbacks?"
+        and "does everything have to be up?" and "if everything has to be up, then you've made a distributed monolith"
+
+            it's ... not an useful thing to say, I think,
+            because like I think everyone - to a certain extent - makes a distributed monolith
+            unless you really aggressively do fault injection - like really aggressively
+
+            I think ... most people have a distributed monolith - whether they realize it or not
+
+    none of the companies that I've worked for have ever made anything other than a distributed monolith either -
+    like: all the things have to be up, they just have to be up!
+
+    and so
+    you could say "well, you shouldn't do microservices!"
+    (and maybe maybe you shouldn't)
+    but they are technical debt [- in a genuinely positive sense! - b/c] they helped people move faster for a time
+
+    it's not like it's black or white;
+        it's not like "oh microservices are bad";
+        like:
+            you've got something in exchange ... for your debt;
+            you borrowed against someone else's productivity in the future
+
+
+
+        my colleague Chris Meikle John ... has this phrase ... that he where ... calls microservices «a socio-technical problem»
+
+            if it was purely technical, you would just ... do a good design [or] do a different design
+
+            but ... there are people motivation;
+            someone wants to get you know this product shipped right away
+            and
+            they don't care what happens next year - they just want to ship it right now;
+
+    ...
+
+
+
+    I sent you a couple of links here
+
+        one is to ... Chris Meikle John's PhD thesis
+        which he did on microservices ... based on research that he did at door Dash ...
+        which is where he talks about the sort of social technical problem
+
+        ... also I also dropped you a link to a talk that I gave in 2016
+        ... where I suggest what might come after microservices
+        ...
+
+
+
+    Was it worth it for Doordash
+
+        I think people would be upset if I didn't ask this question:
+        when it came to that migration,
+        was it worth it to kind of go into the microservices direction
+        or
+        is it more complicated than that in that
+            it helped you initially but now maybe you're kind of paying that tax
+            or
+            have you already paid that tax and now you know it's just smooth sailing from here?
+        what's kind of the situation right now?
+
+        ... that's a really good question ...
+        DoorDash _had to_ do it ...
+            they just ... couldn't ... move any faster with their monolith architecture
+
+            theoretically possible
+            [and]
+            with enough time,
+            they could have
+                rearchitectured the monolith
+                and
+                found ways to let more people work on it at the same time
+                (
+
+                =
+                found  ways of chopping it up and saying ...
+                "this is the monolith for you people, this is the monolith for you people"
+                ...
+                maybe the consumer browsing is one separate monolith
+                and
+                the driver assignment is different
+                )
+
+        ... you could imagine dividing it up into some chunks
+
+        ... they actually
+        actually did do some of that ... but even so it was actually still the same code
+        because
+            there's all this ... shared code
+            ... and
+            the test suite was taking forever to run
+        and ... you know ...
+            it needed a major re-architecture
+            and
+            they didn't have time
+            (
+                ...
+                they needed to add features,
+                fix bugs,
+                and do stuff
+            )
+
+        where are we now?
+
+        ... I don't know ...
+        there's no more monolith ...
+        and
+        ... we have hundreds of services - 500, I think
+        (you need about ... 100 to ... place an order and get it delivered)
+
+
+
+        ... was it worth it?
+        ... of course it was worth it
+        because ... the monolith was grinding to its death
+
+            ... no one knew how to fix it in enough time
+
+        so ... it was worth it because ... DoorDash still exists
+
+
+
+        ... had I joined the company sooner,
+        I might have tried to steer us into some like slightly different directions
+
+            but ... it solved the problem
+            ...
+            it made it so ... the company ... could keep growing
+
+            but at the same time ... we learned just a ton, a ton, a ton about ...
+                what are the hard Parts about microservices
+                and
+                stuff that we talked about in the blog post
+            but it's really - it's all that socio technical problems ...
+
+
+
+                we realize this problem ...
+                if everyone would just please upgrade their grpc client ...
+                then we can fix this weird interaction that we have sometimes
+
+                but there's very little incentive for people to want to ... go upgrade their grpc clients
+                or
+                pick ... your other library
+
+    
+
+                ... now you've got 500 individual things
+                that are running some version of some set of dependencies defined by somebody somewhere
+                and
+                then ... you want to say ...
+                    """
+                    we really want you to go in and change your code to this ...
+                    the API is different we need you to get down this new dependency...
+                    like, it'd be really great if you did, you know?
+                    """
+                like it's kind of hard to justify
+
+
+
+        if I were to give people advice I would say "use as ` as possible"
+
+        ... like
+            are we stepping on each other?
+            okay, fine - ... split it out then
+
+            ... that is, I think very, reasonable
+
+        [BUT] not just
+            """
+            oh by my domain driven design ideas,
+            the consumer service shouldn't know about
+            the something something piece of data[,]
+            therefore it should be a separate service
+            """
+
+
+
+            because what you have I I'll
+            ... you have all these philosophical arguments about how what's the right way to do microservices
+            and
+            next thing you know you have 500 services and a thousand way «fan-out» ... on average ...
+
+    Programming Principles
+
+    interesting and honestly I have one question for you and maybe this will be a little bit ... controversial but I
+
+        think what you're saying kind of reminds me of how many times like programmers have this kind of like philosophy
+
+        they're kind of reading off like a Bible and like everything has to be done this way ...
+
+        there are some interesting that people say like you know when it comes to let's say like unit testing or like object oriented programming which you know some people
+
+        have like their opinions on
+
+        but obviously ... "the context matters"
+
+            ... you could say that this is a principle and ... it shall never be broken
+
+            but if ... the context of the problem is ... dictating that
+            ... the solution is just more simple to do it this [other] way
+            or
+            maybe we just don't need all these unit tests
+            or
+            the unit tests aren't actually helpful at all
+
+            I'm not against unit tests or anything like that
+
+
+    yeah ... your overall question is
+
+        are there just these ideas that programmers have that that they stick to they're not exactly sure why and perhaps
+
+        they stick to them at their detriment um and the example you CED is is test 100%
+
+
+
+        um yeah a example of that is that you know the thing I talked about about like oh you have to have that as a separate
+
+        service because that's how you do microservices um testing is a fascinating topic I am I I too am not
+
+        against writing tests they have saved me many times um
+
+        but ... tests have a
+
+        curious way of making some changes harder because they kind of ...
+
+        solidify the way a thing works and you might look at doing something and you know that it would be right to kind of
+
+        refactor something move it around you're like oh man I'm gonna have to rewrite all these tests and this is another socio-technical problem but[,] ... in projects that have
+
+        a lot of tests[,] it tends to encourage uh people to work around the fact that the
+
+        they just want to keep the test suite working
+        and
+        not necessarily get the best architecture
+
+        also test coverage - ... I am _deeply_ frustrated with this as ... a metric of performance
+        because all that really matters is your assertions
+
+            you can have 100% coverage and just say "assert one equals one"
+
+            ...
+            but there's no way to measure assertion quality
+            and I actually kind of wish there was
+
+            because if there was a way I think I would be on board with you should probably have some amount of you
+
+            know tests that with quality assertions but lacking any way of measuring the
+
+            quality of your assertions I think it's kind of silly to chase to chase test coverage numbers but but we do ... it's my personal opinion
+
+            
+
+            we of course say "oh no no - it's very important that you have test coverage!"
+            and it tends to be that
+            people also when they're in there making their test they __tend__ to have good
+            assertions ...
+            but it's like it's a little misleading like seems like but anyway yeah people have that and
+
+
+
+        it's
+
+        really hard to um give people a framework
+
+        for understanding when they should question these kind of dogmatic
+
+        ideas
+
+    I I actually don't know I all I know is I've been doing this for long enough that I just kind of have a sense
+
+    of when I can get away with it and you know and then people kind of look at me and they're like Yeah but isn't 80
+
+    better than 70 % test coverage you know and we'll have those arguments but I don't know man yeah it's this a huge
+
+    problem I think ...:
+
+        how do you know when this you know ideal is serving you or is actually hurting you?
+
+
+
+    Hot takes
+
+    ... do you have any other like last minute ...
+    hot takes where you think the industry is just wrong about something
+    or
+    just a general Trend that you've seen that's just like counterintuitive or just not helpful at all?
+
+    how do you feel about object-oriented programming?
+
+        ... I'm one of these people who thinks that Go is a good programming language
+        because it has fewer features
+        and
+        makes you think about your programs differently
+
+        ... I actually think it is a it's a wonderful uh language for a large team to collaborate around
+
+
+
+
+    it's a shame that the industry has not produced ... an alternative ...
+
+        it's bad ... I think we should build Frameworks that offer a different set of trade-offs
+
+        ... this tradeoff of it's either all in the same thing or it's in a million things and
+        you have to like design it explicitly around these assumptions that it's all in a one monolith
+        or it's always making Network calls a over place -
+        I think it's terrible ...
+
+
+
+        this industry like should produce new abstractions new Frameworks ...;
+        I don't know exactly what they are;
+        ... I'm actually working on one at Doordash that's not done yet
+        and
+        we'll see how well it works
+
+        but you know it was a huge battle to try to get it funded because everyone's like but
+
+
+
+        in general I want the industry to do better
+
+            we should not have to pick between monolith and microservices
+
+            there should there should be there should be something in between ...
+
+
+
+    Programming Advice
+
+    last question because
+    I know people are going to want to know this so do you have any advice for other programmers that are listening to this maybe they're in college maybe they're
+
+    working full-time and they kind of want to follow in your footsteps and get really good at application development backend development and you know
+
+    architecture design what should they do? ...
+
+
+
+        I got super lucky and in my career and that just I happened to be in the right place
+
+        at some right times and you know met some people that gave me some opportunities
+
+
+        ... I just - I don't know, man -
+        I just write a lot of software
+
+
+
+        ... I just don't [settle -] I'm not not satisfied ... when someone says
+        "Ah here's this Library ... just use it";
+        ... I always want to know what's in there
+
+
+
+        ... I have a deep fear of dependencies ...;
+        I don't like run other people's code unless it's really important;
+
+
+
+        ... it's very hard to replicate luck but I I just think like if you if you care about your
+
+        craft you care about like understanding like how stuff works and just like what
+
+        good looks like and not necessarily getting sucked into these kind of
+
+        dogmatic ideals like we were talking about you just like what like good is
+
+        contextual based on what kind of project you're working on and I think it also evolves as the industry evolves technology involves ...
+
+            figure out how stuff works;
+
+            just ... make software better
