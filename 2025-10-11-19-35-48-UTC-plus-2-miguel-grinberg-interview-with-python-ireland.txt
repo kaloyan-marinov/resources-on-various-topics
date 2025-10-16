@@ -70,21 +70,15 @@ transcript:
 
 
 
-    ... this is something that I read many  times People say that a coding AI is like you get  
+    ... many ... people say that
+    a coding AI is like you get an intern that is very happy ... to help you...
+    But this is an intern that has short-term memory loss...
+    because every time you open the chat to talk to this AI,
+    it doesn't remember anything, it doesn't learn anything...
 
-    an intern that is very happy to you know to help  you
-
-        That's great But this is an intern that has  
-
-        short-term memory loss right because every time  you open the chat to talk to this AI it doesn't  
-
-        remember anything It doesn't learn anything right
-
-
-
-        I really want a human intern that I can train Yeah  
-
-        I get better It gets better right that give me  that Give me an AI that learns Maybe I look at it
+    I really want a human intern that I can train ... [and] gets better[.] ...
+    
+    Give me an AI that learns, maybe I'll look at it.
 
 
 
