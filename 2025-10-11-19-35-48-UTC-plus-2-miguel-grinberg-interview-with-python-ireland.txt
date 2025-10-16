@@ -104,15 +104,11 @@ transcript:
         assume, because it works, that it's good and that you will be able to maintain...
         You really have to do a good review.
 
-    That's a very good point  
-
-    I mean I people often do say that
-
-        it's harder to  read code than to write code sometimes
-
-        right ... it takes  a lot of skill ...
-
-        It's something that that people you know need to  be aware of going forward
+    ...
+    People often do say that
+    it's harder to read code than to write code...
+    It takes a lot of skill ...
+    It's something that ... people ... need to be aware of, going forward.
 
 
 
