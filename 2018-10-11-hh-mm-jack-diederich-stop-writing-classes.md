@@ -100,7 +100,7 @@ but I'm actually going to agree with everything that Raymond [Hettinger] just sa
    [but] the signature of "this shouldn't be a class" is that
    it has 2 methods, one of which is `__init__`.
 
-   Anyitime you start aliasing your classes
+   Anytime you start aliasing your classes
    to just instantiate them once, use them once, and then throw them away,
    in your brain you should be thinking,
    "Oh, I can refactor that - it can be simpler! Much simpler!"
