@@ -82,44 +82,27 @@ transcript:
 
 
 
-    But but these you know this crop of stupid AIs  that don't have memory Yeah I I don't know I mean  
+        This is something interesting[.]
+        This is not a thought that came from me
+        but I read somewhere and I think [that]
+        what we are going to need going forward is
+        we're going to need to be very good at code reviewing
+        which is something that we are not.
+        
+        Many people they're not used to [reviewing] code in the same way that
 
-    there's some use for them right I don't want to  you to be completely negative doesn't provide good  
+            now when we look at a picture on Twitter ...
+            if it's too good to be true...
+            we [- or at least, a significant number of us - have been] programmed to distrust [it].
 
-    use to me
+            ...
+            so the same thing is going to have to happen with code.
 
-
-
-
-
-
-    That's interesting I mean yeah I mean  I've seen some of the results of vibe coding over  
-
-    the last couple years or you know some colleagues  of mine you know certainly one colleague of mine  
-
-    has seen some disasters and that has been brought  in
-
-        Oh they're awful Yeah I mean so and you know  
-
-        this is something interesting this this is not  something this is not a thought that came from me  
-
-        but I read somewhere and I think what we are going  to need going forward is we're going to need to be  
-
-        very good at code reviewing which is something  that we are not many people they're not used to  
-
-        review code in the same way that
-
-            now when we look  at a picture on Twitter or you know whatever you  
-
-            know if it's too good to be true we say yeah this  you know we were programmed to distrust pictures  
-
-            right because of the AI right so the same thing  is going to have to happen with code
-
-        You cannot  
-
-        take code that comes from an unknown source and  assume because it works that it's good and that  
-
-        you will be able to maintain it right you really  have to do a good review
+        You cannot
+        take code that comes from an unknown source
+        and
+        assume, because it works, that it's good and that you will be able to maintain...
+        You really have to do a good review.
 
     That's a very good point  
 
