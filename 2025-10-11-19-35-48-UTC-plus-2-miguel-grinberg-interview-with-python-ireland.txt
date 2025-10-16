@@ -60,17 +60,21 @@ transcript:
 
 
 
-    yeah So that the vibe coders can write throwaway  
+    ...
+    Vibe coders can
+    write «throwaway code» and
+    get results and
+    then they forget about it...
+    [AI-assisted coding] seems reasonable for that.
 
-    code and get results and then they forget about it  and that seems reasonable for that
 
 
-
-    But in my case  
-
-    this is code that I'm going to have to maintain So  yes I don't really see at least today's you know  
-
-    today's models they're not able to provide you  know good support for a person like me
+    But in my case,
+    [I work on code ...]
+    that I'm going to have to maintain.
+    [It's not «throwaway code».]
+    
+    At least ... today's models [are] not able to provide ... good support for a person like me.
 
 
 
