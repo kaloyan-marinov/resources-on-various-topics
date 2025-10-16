@@ -19,8 +19,8 @@ transcript:
     It's not great.
     ...
     For any kind of professional work, it's not great.
-    
-    ...
+
+
 
     ...
     vibe coding [is] great ... if you come from the bottom...
@@ -46,20 +46,12 @@ transcript:
         you're going to get really good code [suggestions] that will be equal to what you will write
         are ... really slim.
 
-
-
     ...
     Every time I look at a suggestion that GitHub Copilot offers,
     I feel that I can do better.
     
     
     
-    And given that when  I'm working on code this is code that I'm going  
-
-    to have to maintain It's not throwaway code right
-
-
-
     ...
     Vibe coders can
     write «throwaway code» and
