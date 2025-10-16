@@ -124,15 +124,9 @@ transcript:
 
 
 
-    maybe  the AI with time eventually the AI will be able  
-
-    to do it faster than you That's possible right so  it may be good I may end up at some point decide  
-
-    I may decide that it works for me as well in that  capacity
-
-        but it definitely needs to be something  
-
-        that I intended to write in the first place 
-        if I'm  going to be on the hook to maintain that code and  
-
-        be responsible for it
+    Maybe... with time, eventually the AI will be able to do it faster than you.
+    ...
+    I may decide that it works for me as well in that capacity.
+    But it definitely needs to be something
+    that I intended to write in the first place,
+    if I'm going to be on the hook to maintain that code and be responsible for it.
