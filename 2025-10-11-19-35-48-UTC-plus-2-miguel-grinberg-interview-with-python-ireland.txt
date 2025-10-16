@@ -113,27 +113,14 @@ transcript:
 
 
     ...
-    Maybe they'll find their way to the Flask  Mega-Tutorial the resources and you know start to  
-
-    go a bit deeper and and learn the craft themselves ...
-
-        which you are going to need if you  
-
-        need to review code even if if you end up using  AI as a helper you're going to have to make sure  
-
-        that the code that the AI is giving you at least  if you get paid to do the work right Yeah Right  
-
-
-
-        if you're doing this for work professionally I  don't see how you can trust blindly trust AI right  
-
+    Even ... if you end up using AI as a helper[,]
+    you're going to have to - at least if you get paid to do the work ...
+    If you're doing this for work - professionally, ...
+    
         you're going to have to learn and understand
 
-
-
-        So  basically you will need to be able to write what  
-
-        you're asking the AI to write for you ...
+        [to the point where]
+        you will need to be able to write what you're asking the AI to write for you ...
 
 
 
