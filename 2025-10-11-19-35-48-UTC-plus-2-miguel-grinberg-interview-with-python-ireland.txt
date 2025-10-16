@@ -10,44 +10,55 @@ source:
         >>
         Interview with Python Ireland
     )
-    https://www.youtube.com/watch?v=pkDua8hTUfA
 
 
 
 transcript:
 
-    uh GitHub Copilot suggests Yeah it's not great  you know for any kind of professional work it's  
+    ...
+    many times I compare
+    what I write
+    with what GitHub Copilot suggests.
+    ...
+    It's not great.
+    ...
+    For any kind of professional work, it's not great.
+    
+    ...
 
-    not great Okay I so
-
-    now you know we're all seeing  people who do vibe coding that's great right if  
-
-    you come from the bottom right and if you don't  know something and you're going to do something  
-
-    you know that doesn't have to be robust you  know the AI will be great right you're likely  
-
-    to get some results that you would not be able  to achieve yourself unless you spend a lot of   time learning right great for that
-
-
-
-    coming from  the other side right when you're experienced I  
-
-    don't really see a lot of value because the code  that
-
-
-        So think about this It was trained on all  
-
-        the code on GitHub right Right without regards  of being good code bad code It's just code right  
-
-        so the chances that you're going to get really  good code that will be equal to what you will  
-
-        write are you know really slim
+    ...
+    vibe coding [is] great ... if you come from the bottom...
+    
+    If
+    you don't know something
+    and
+    you're going to do something ... that doesn't have to be robust[,]
+    the AI will be great...
+    You're likely to get some results that you would not be able to achieve yourself
+    unless you spend a lot of time learning.
 
 
 
-    And I'm every time  I look at a suggestion that GitHub Copilot offers  
+    Coming from the other side,
+    [i.e.] when you're experienced,
+    I don't really see a lot of value
+    
+        because ... think about this:
+        It was trained on all the code on GitHub -
+        without [regard for whether that was] good code [or] bad code...
+        So, the chances that
+        you're going to get really good code [suggestions] that will be equal to what you will write
+        are ... really slim.
 
-    I feel that I can do better And given that when  I'm working on code this is code that I'm going  
+
+
+    ...
+    Every time I look at a suggestion that GitHub Copilot offers,
+    I feel that I can do better.
+    
+    
+    
+    And given that when  I'm working on code this is code that I'm going  
 
     to have to maintain It's not throwaway code right
 
