@@ -1,0 +1,47 @@
+2025-10-21-21-44-33-UTC-plus-2-traversy-media-on-my-current-tech-stack.txt
+
+
+
+source:
+    (
+        yt
+        >>
+        Traversy Media
+        >>
+        My Current Tech Stack
+    )
+
+
+
+transcript:
+
+    ...
+
+    [Symptek] is a symptom tracker to track health issues and symptoms,
+    with all kinds of analytics ...
+
+    I started out vibe coding
+
+    this months ago and it didn't work out.
+
+    I got all kinds of errors that were
+
+    being suppressed and then when I would
+
+    try to fix them, more things broke and
+
+    it just ended up in just a mess. And it
+
+    taught me a lesson. So, I'm glad it
+
+    happened. It taught me that you can't
+
+    just stay within the prompt and build a
+
+    large application. It just it isn't
+
+    going to work out. You need to get in
+
+    there and manually run and write code
+
+    and test.
