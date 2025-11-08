@@ -8,22 +8,14 @@
 
    Zusätzlicher Steuerrückbehalt USA
 
-   In diesem Beitrag erklären wir Ihnen den zusätzlichen Steuerrückbehalt auf US-Dividenden und worin der Unterschied liegt zur pauschalen Steueranrechnung.
+   In diesem Beitrag erklären wir Ihnen
+   den zusätzlichen Steuerrückbehalt auf US-Dividenden
+   und
+   worin der Unterschied liegt zur pauschalen Steueranrechnung.
 
 # Content
 
    ## Übersicht
-
-   <!-- |                       | Quellensteuer USA  | Entlastung an der Quelle  | ***               | ***              | Total   |
-   |                       | Brutto             | (wenn über                | Quellensteuer USA | Zusätzlicher     | Steuer  |
-   |                       |                    | «Qualified Intermediary») | Netto             | Steuerrückbehalt |         |
-   |                       |                    | gehalten                  | ***               | ***              |         |
-   | --------------------- | ------------------ | ------------------------- | ----------------- | ---------------- | ------- |
-   |                       |                30% |                       15% |               15% |              15% |     30% |
-   | --------------------- | ------------------ | ------------------------- | ----------------- | ---------------- | ------- |
-   | Beispiel              |                    |                           |                   |                  |         |
-   | US-Dividende          |            CHF 300 |                   CHF 150 |           CHF 150 |          CHF 150 | CHF 300 |
-   | umgerechnet CHF 1'000 |                    |                           |                   |                  |         | -->
 
    |                       | Quellensteuer USA <br> Brutto  | Entlastung an der Quelle <br> (wenn über <br> «Qualified Intermediary» <br> gehalten) | *** <br> Quellensteuer USA <br> Netto <br> *** | *** <br> Zusätzlicher <br> Steuerrückbehalt <br> *** | Total <br> Steuer  |
    | --------------------- | ------------------ | ------------------------- | ----------------- | ---------------- | ------- |
@@ -36,21 +28,36 @@
 
    1. US-Quellensteuer
 
-   - Grundsätzlich erheben die USA eine «Quellensteuer» auf Dividenden und Zinsen von 30 Prozent.
+   - Grundsätzlich erhebt die USA eine «Quellensteuer» auf Dividenden und Zinsen von 30 Prozent.
    
-   - In der Schweiz kennen wir dieses System unter dem Begriff «Verrechnungssteuer». Die Verrechnungssteuer in der Schweiz beträgt 35 Prozent.
+   - In der Schweiz kennen wir dieses System unter dem Begriff «Verrechnungssteuer».
+     Die Verrechnungssteuer in der Schweiz beträgt 35 Prozent.
 
-   - Diese Art von Steuern ist eine Art Pfand: Wenn man die erzielten Erträge in der Steuererklärung korrekt deklariert, dann kriegt man die Steuer zurück.
+   - Diese Art von Steuern ist eine Art Pfand:
+     Wenn man die erzielten Erträge in der Steuererklärung korrekt deklariert,
+     dann kriegt man die Steuer zurück.
 
    - Reduzierte Quellensteuer dank Doppelbesteuerungsabkommen
 
-     - Wenn die USA auf Dividenden 30 Prozent Steuern abzieht und die Nettodividenden in der Schweiz zusätzlich steuerpflichtig sind (Einkommenssteuer), besteht eine doppelte Besteuerung. Eine doppelte Besteuerung ist allerdings nicht erwünscht, weshalb die Staaten mit entsprechenden Abkommen versuchen, Regeln zu vereinbaren, damit man eine Doppelbesteuerung vermeiden kann.
+     - Wenn
+       die USA auf Dividenden 30 Prozent Steuern abzieht
+       und
+       die Nettodividenden in der Schweiz zusätzlich steuerpflichtig sind (Einkommenssteuer),
+       besteht eine doppelte Besteuerung.
+       Eine doppelte Besteuerung ist allerdings nicht erwünscht,
+       weshalb die Staaten mit entsprechenden Abkommen versuchen, Regeln zu vereinbaren,
+       damit man eine Doppelbesteuerung vermeiden kann.
 
-     - Die Schweiz hat 1996 ein solches Abkommen mit den USA geschlossen. In diesem Doppelbesteuerungsabkommen ist definiert, wie hoch die US-Steuer auf Dividenden maximal sein darf, wenn der Dividendenempfänger in der Schweiz wohnt:
+     - Die Schweiz hat 1996 ein solches Abkommen mit den USA geschlossen.
+       In diesem Doppelbesteuerungsabkommen ist definiert,
+       wie hoch die US-Steuer auf Dividenden maximal sein darf,
+       wenn der Dividendenempfänger in der Schweiz wohnt:
 
        - bei Dividenden:
 
-         - 5 % bei qualifizierten Beteiligungen von Gesellschaften am dividenden-zahlenden Unternehmen. Eine qualifizierte Beteiligung liegt vor, wenn die Gesellschaft mehr als 10 Prozent der Aktien des dividenden-zahlenden Unternehmens besitzt.
+         - 5 % bei qualifizierten Beteiligungen von Gesellschaften am dividenden-zahlenden Unternehmen.
+           Eine qualifizierte Beteiligung liegt vor,
+           wenn die Gesellschaft mehr als 10 Prozent der Aktien des dividenden-zahlenden Unternehmens besitzt.
 
          - 15 % in allen anderen Fällen.
 
@@ -58,21 +65,39 @@
 
          - 0 % bei Zinsen (Zinsen sind gemäss Doppelbesteuerungsabkommen nur in der Schweiz steuerbar).
 
-     - Die Reduktion der US-Quellensteuer von 30 Prozent auf 0, 5 oder 15 Prozent ist nur möglich für Depotbanken, die den Status «Qualified Intermediary» haben. Dieser Status wird von der amerikanischen Steuerbehörde IRS vergeben. Qualified Intermediaries müssen Gewähr bieten können, dass die Dividenden und Zinsen an Ausländer (z. B. an natürliche oder juristische Personen mit Wohnsitz in der Schweiz) fliessen.
+     - Die Reduktion der US-Quellensteuer von 30 Prozent auf 0, 5 oder 15 Prozent
+       ist nur möglich für Depotbanken,
+       die den Status «Qualified Intermediary» haben.
+       Dieser Status wird von der amerikanischen Steuerbehörde IRS vergeben.
+       Qualified Intermediaries müssen Gewähr bieten können,
+       dass die Dividenden und Zinsen an Ausländer
+       (z. B. an natürliche oder juristische Personen mit Wohnsitz in der Schweiz)
+       fliessen.
 
-   - Depotbanken ohne den Status «Qualified Intermediary» können die Quellensteuer nicht automatisch reduzieren. Für diesen Fall gibt es aber noch das das Formular W8-BEN der USA, das je nach Broker:
+   - Depotbanken ohne den Status «Qualified Intermediary» können
+     die Quellensteuer nicht automatisch reduzieren.
+     Für diesen Fall gibt es aber noch das das Formular W8-BEN der USA,
+     das je nach Broker:
 
-     - direkt der Broker für Sie ausfüllt, um die Hälfte der 30 Prozent Quellensteuer zurückzufordern oder
+     - direkt der Broker für Sie ausfüllt,
+       um die Hälfte der 30 Prozent Quellensteuer zurückzufordern oder
 
      - Sie selbst ausfüllen und einreichen können.
 
-   2. Zusätzlicher Steuerrückbehalt USA (= Zusätzlicher Steuerrückbehalt auf US-Dividenden von Schweizer Depotstellen)
+   2. Zusätzlicher Steuerrückbehalt USA
+      (= Zusätzlicher Steuerrückbehalt auf US-Dividenden von Schweizer Depotstellen)
 
-   - Zusätzlich zu der im vorhergehenden Kapitel erwähnten Steuer, die an der Quelle in den USA erhoben wird, gibt es eine Steuer, die in der Schweiz erhoben wird. Man spricht vom «zusätzlichen Steuerrückbehalt». Dieser beträgt:
+   - Zusätzlich zu der im vorhergehenden Kapitel erwähnten Steuer,
+     die an der Quelle in den USA erhoben wird,
+     gibt es eine Steuer, die in der Schweiz erhoben wird.
+     Man spricht vom «zusätzlichen Steuerrückbehalt».
+     Dieser beträgt:
 
      - bei Dividenden:
 
-       - 25 % bei qualifizierten Beteiligungen von Gesellschaften am dividenden-zahlenden Unternehmen. Eine qualifizierte Beteiligung liegt vor, wenn die Gesellschaft mehr als 10 Prozent der Aktien des dividenden-zahlenden Unternehmens besitzt.
+       - 25 % bei qualifizierten Beteiligungen von Gesellschaften am dividenden-zahlenden Unternehmen.
+         Eine qualifizierte Beteiligung liegt vor,
+         wenn die Gesellschaft mehr als 10 Prozent der Aktien des dividenden-zahlenden Unternehmens besitzt.
 
        - 15 % in allen anderen Fällen.
 
@@ -80,11 +105,16 @@
 
        - 30 %
 
-   - Der zusätzliche Steuerrückbehalt erfolgt nur durch Depotbanken in der Schweiz. (Ausländische Depotbanken kann die Schweizer Behörde naturgemäss nicht zwingen, ihr Steuern abzuliefern.)
+   - Der zusätzliche Steuerrückbehalt erfolgt nur durch Depotbanken in der Schweiz.
+     (Ausländische Depotbanken kann die Schweizer Behörde naturgemäss nicht zwingen,
+     ihr Steuern abzuliefern.)
 
    - Wozu der zusätzliche Steuerrückbehalt?
 
-     Ohne zusätzlichen Steuerrückbehalt in der Schweiz gäbe es unter Umständen gar keinen Anreiz mehr, die Erträge in der Steuererklärung zu deklarieren. Der zusätzliche Steuerrückbehalt dient also dazu, das Pfand für die Steuerehrlichkeit wieder herzustellen.
+     Ohne zusätzlichen Steuerrückbehalt in der Schweiz gäbe es unter Umständen gar keinen Anreiz mehr,
+     die Erträge in der Steuererklärung zu deklarieren.
+     Der zusätzliche Steuerrückbehalt dient also dazu,
+     das Pfand für die Steuerehrlichkeit wieder herzustellen.
 
    ## Pauschale Steueranrechnung
 
