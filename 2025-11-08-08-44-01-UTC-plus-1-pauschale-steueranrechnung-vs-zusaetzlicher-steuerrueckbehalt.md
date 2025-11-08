@@ -119,8 +119,7 @@
    ## Pauschale Steueranrechnung
 
    Man
-   kann
-   Steuern auf ausländischen Erträgen
+   kann Steuern auf ausländischen Erträgen
    der eigenen Steuerschuld anrechnen lassen
    und
    bezahlt so weniger Steuern.
@@ -144,16 +143,34 @@
 
    ## Rückforderung des zusätzlichen Steuerrückbehalts
 
-   Privatpersonen können den zusätzlichen Steuerrückbehalt zurückfordern, indem sie im Rahmen der Steuererklärung das Formular R-US 164 «Antrag auf Rückerstattung des zusätzlichen Steuerrückbehaltes USA» ausfüllen. In vielen Kantonen ist das Formular R-US 164 im Formular DA-1 «Antrag auf Anrechnung ausländischer Quellensteuern für ausländische Dividenden und Zinsen» integriert, sodass nur ein Formular zu Anwendung kommt, das sowohl die pauschale Steueranrechnung als auch die Rückforderung des zusätzlichen Steuerrückbehalts ermöglicht.
+   Privatpersonen können den zusätzlichen Steuerrückbehalt zurückfordern,
+   indem sie im Rahmen der Steuererklärung das Formular R-US 164 «Antrag auf Rückerstattung des zusätzlichen Steuerrückbehaltes USA» ausfüllen.
+   In vielen Kantonen ist das Formular R-US 164
+   im Formular DA-1 «Antrag auf Anrechnung ausländischer Quellensteuern für ausländische Dividenden und Zinsen»
+   integriert,
+   sodass nur ein Formular zu Anwendung kommt, das
+   sowohl die pauschale Steueranrechnung
+   als auch die Rückforderung des zusätzlichen Steuerrückbehalts
+   ermöglicht.
 
-   Das Formular DA-1 verwendet den Begriff «Anrechnung», weil die Rückerstattung mit der Steuerschuld verrechnet wird. Die Steuerschuld, die man aufgrund von Einkommen und Vermögen hat, wird durch das geltend gemachte Guthaben aus dem zusätzlichen Steuerrückbehalt reduziert.
+   Das Formular DA-1 verwendet den Begriff «Anrechnung»,
+   weil die Rückerstattung mit der Steuerschuld verrechnet wird.
+   Die Steuerschuld, die man aufgrund von Einkommen und Vermögen hat, wird
+   durch das geltend gemachte Guthaben aus dem zusätzlichen Steuerrückbehalt
+   reduziert.
 
-   Wer die Dividenden und Zinsen in der Steuererklärung nicht deklariert, verliert den Anspruch auf Rückerstattung des zusätzlichen Steuerrückbehalts drei Jahre nach Ablauf der Steuerperiode, in der die Erträge angefallen sind.
+   Wer die Dividenden und Zinsen in der Steuererklärung nicht deklariert, verliert
+   den Anspruch auf Rückerstattung des zusätzlichen Steuerrückbehalts
+   drei Jahre nach Ablauf der Steuerperiode, in der die Erträge angefallen sind.
 
    ## Unterschied zwischen der pauschalen Steueranrechnung und dem zusätzlichen Steuerrückbehalt auf US-Dividenden
 
    Das Ergebnis beider Sachen ist dasselbe.
-   Man kann Steuern auf ausländischen Erträgen der eigenen Steuerschuld anrechnen lassen und bezahlt so weniger Steuern.
+   Man
+   kann Steuern auf ausländischen Erträgen
+   der eigenen Steuerschuld anrechnen lassen
+   und
+   bezahlt so weniger Steuern.
 
    1. Bei der pauschalen Steueranrechnung ist eine Anrechnung nur möglich,
       wenn eine Einkommenssteuer im betreffenden Jahr geschuldet ist.
