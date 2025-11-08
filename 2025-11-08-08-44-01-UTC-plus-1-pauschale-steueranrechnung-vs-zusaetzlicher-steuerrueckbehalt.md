@@ -142,14 +142,6 @@
    > weil die Anrechnung nicht auf die einzelnen schweizerischen Steuern (Einkommensteuer, Vermögenssteuer usw.) aufgeteilt wird.
    > Im Grunde verwirrt das Wort «pauschal» aber mehr als es hilft.
 
-
-
-   Das Ergebnis der pauschalen Steueranrechnung ist dasselbe wie bei der Rückforderung des zusätzlichen Steuerrückbehalts auf US-Dividenden. 
-
-   Inhaltlich geht es allerdings um einen anderen Teil der Steuern auf ausländischen Erträgen, ...
-
-   Ein weiterer Unterschied besteht darin, dass der zusätzliche Steuerrückbehalt auch zurückerstattet wird, wenn man keine Steuerschuld hat. 
-
    ## Rückforderung des zusätzlichen Steuerrückbehalts
 
    Privatpersonen können den zusätzlichen Steuerrückbehalt zurückfordern, indem sie im Rahmen der Steuererklärung das Formular R-US 164 «Antrag auf Rückerstattung des zusätzlichen Steuerrückbehaltes USA» ausfüllen. In vielen Kantonen ist das Formular R-US 164 im Formular DA-1 «Antrag auf Anrechnung ausländischer Quellensteuern für ausländische Dividenden und Zinsen» integriert, sodass nur ein Formular zu Anwendung kommt, das sowohl die pauschale Steueranrechnung als auch die Rückforderung des zusätzlichen Steuerrückbehalts ermöglicht.
@@ -157,3 +149,19 @@
    Das Formular DA-1 verwendet den Begriff «Anrechnung», weil die Rückerstattung mit der Steuerschuld verrechnet wird. Die Steuerschuld, die man aufgrund von Einkommen und Vermögen hat, wird durch das geltend gemachte Guthaben aus dem zusätzlichen Steuerrückbehalt reduziert.
 
    Wer die Dividenden und Zinsen in der Steuererklärung nicht deklariert, verliert den Anspruch auf Rückerstattung des zusätzlichen Steuerrückbehalts drei Jahre nach Ablauf der Steuerperiode, in der die Erträge angefallen sind.
+
+   ## Unterschied zwischen der pauschalen Steueranrechnung und dem zusätzlichen Steuerrückbehalt auf US-Dividenden
+
+   Das Ergebnis beider Sachen ist dasselbe.
+   Man kann Steuern auf ausländischen Erträgen der eigenen Steuerschuld anrechnen lassen und bezahlt so weniger Steuern.
+
+   1. Bei der pauschalen Steueranrechnung ist eine Anrechnung nur möglich,
+      wenn eine Einkommenssteuer im betreffenden Jahr geschuldet ist.
+      
+      - Die Einkommenssteuerschuld definiert die maximale pauschale Steueranrechnung.
+        (Ohne Steuerschuld ist auch keine Anrechnung möglich.)
+      
+      - Zudem wird eine pauschale Steueranrechnung erst ab einem Betrag von 100 Franken gewährt.
+
+   2. Der zusätzliche Steuerrückbehalt wird auch zurückerstattet,
+      wenn man keine Steuerschuld hat.
