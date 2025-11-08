@@ -76,7 +76,7 @@
 
    - Depotbanken ohne den Status «Qualified Intermediary» können
      die Quellensteuer nicht automatisch reduzieren.
-     Für diesen Fall gibt es aber noch das das Formular W8-BEN der USA,
+     Für diesen Fall gibt es aber noch das Formular W8-BEN der USA,
      das je nach Broker:
 
      - direkt der Broker für Sie ausfüllt,
