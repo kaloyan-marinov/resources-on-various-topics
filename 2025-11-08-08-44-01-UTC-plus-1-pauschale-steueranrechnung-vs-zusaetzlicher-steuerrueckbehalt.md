@@ -120,3 +120,11 @@ Ohne zusätzlichen Steuerrückbehalt in der Schweiz gäbe es unter Umständen ga
    Inhaltlich geht es allerdings um einen anderen Teil der Steuern auf ausländischen Erträgen, ...
 
    Ein weiterer Unterschied besteht darin, dass der zusätzliche Steuerrückbehalt auch zurückerstattet wird, wenn man keine Steuerschuld hat. 
+
+Rückforderung des zusätzlichen Steuerrückbehalts
+
+Privatpersonen können den zusätzlichen Steuerrückbehalt zurückfordern, indem sie im Rahmen der Steuererklärung das Formular R-US 164 «Antrag auf Rückerstattung des zusätzlichen Steuerrückbehaltes USA» ausfüllen. In vielen Kantonen ist das Formular R-US 164 im Formular DA-1 «Antrag auf Anrechnung ausländischer Quellensteuern für ausländische Dividenden und Zinsen» integriert, sodass nur ein Formular zu Anwendung kommt, das sowohl die Rückforderung des zusätzlichen Steuerrückbehalts als auch die pauschale Steueranrechnung (vgl. nächstes Kapitel) ermöglicht.
+
+Das Formular DA-1 verwendet den Begriff «Anrechnung», weil die Rückerstattung mit der Steuerschuld verrechnet wird. Die Steuerschuld, die man aufgrund von Einkommen und Vermögen hat, wird durch das geltend gemachte Guthaben aus dem zusätzlichen Steuerrückbehalt reduziert.
+
+Wer die Dividenden und Zinsen in der Steuererklärung nicht deklariert, verliert den Anspruch auf Rückerstattung des zusätzlichen Steuerrückbehalts drei Jahre nach Ablauf der Steuerperiode, in der die Erträge angefallen sind.
