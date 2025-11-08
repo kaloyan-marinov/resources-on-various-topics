@@ -9,9 +9,9 @@
    Zusätzlicher Steuerrückbehalt USA
 
    In diesem Beitrag erklären wir Ihnen
-   den zusätzlichen Steuerrückbehalt auf US-Dividenden
+   die pauschale Steueranrechnung
    und
-   worin der Unterschied liegt zur pauschalen Steueranrechnung.
+   den zusätzlichen Steuerrückbehalt auf US-Dividenden.
 
 # Content
 
