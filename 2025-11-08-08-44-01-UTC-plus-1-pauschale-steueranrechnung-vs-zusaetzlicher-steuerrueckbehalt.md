@@ -12,7 +12,7 @@
 
 # Content
 
-   # Übersicht
+   ## Übersicht
 
    <!-- |                       | Quellensteuer USA  | Entlastung an der Quelle  | ***               | ***              | Total   |
    |                       | Brutto             | (wenn über                | Quellensteuer USA | Zusätzlicher     | Steuer  |
@@ -33,3 +33,13 @@
    Die «Quellensteuer Netto» kann über die «pauschale Steueranrechnung» geltend gemacht werden.
 
    Der «zusätzliche Steuerrückbehalt» kann ebenfalls zurückgefordert werden (wie die Verrechnungssteuer).
+
+   ## Unterschied zur pauschalen Steueranrechnung
+
+   Das Ergebnis der pauschalen Steueranrechnung ist dasselbe wie bei der Rückforderung des zusätzlichen Steuerrückbehalts auf US-Dividenden. Man kann Steuern auf ausländischen Erträgen der eigenen Steuerschuld anrechnen lassen und bezahlt so weniger Steuern.
+
+   Inhaltlich geht es allerdings um einen anderen Teil der Steuern auf ausländischen Erträgen, nämlich auf den Teil, den man im Ausland nicht zurückfordern kann und definitiv geschuldet ist.
+
+   Ein weiterer Unterschied besteht darin, dass der zusätzliche Steuerrückbehalt auch zurückerstattet wird, wenn man keine Steuerschuld hat. Bei der pauschalen Steueranrechnung ist hingegen eine Anrechnung nur möglich, wenn eine Einkommenssteuer im betreffenden Jahr geschuldet ist. Die Einkommenssteuerschuld definiert die maximale pauschale Steueranrechnung. Ohne Steuerschuld ist auch keine Anrechnung möglich. Zudem wird eine pauschale Steueranrechnung erst ab einem Betrag von 100 Franken gewährt.
+
+   Die pauschale Steueranrechnung ausländischer Quellensteuern auf Dividenden wird als «pauschal» bezeichnet, weil die Anrechnung nicht auf die einzelnen schweizerischen Steuern (Einkommensteuer, Vermögenssteuer usw.) aufgeteilt wird. Im Grunde verwirrt das Wort «pauschal» aber mehr als es hilft.
