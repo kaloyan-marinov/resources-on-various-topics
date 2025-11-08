@@ -55,15 +55,15 @@
 
        - bei Dividenden:
 
-         - 5 % bei qualifizierten Beteiligungen von Gesellschaften am dividenden-zahlenden Unternehmen.
+         - 5% bei qualifizierten Beteiligungen von Gesellschaften am dividenden-zahlenden Unternehmen.
            Eine qualifizierte Beteiligung liegt vor,
            wenn die Gesellschaft mehr als 10 Prozent der Aktien des dividenden-zahlenden Unternehmens besitzt.
 
-         - 15 % in allen anderen Fällen.
+         - 15% in allen anderen Fällen.
 
       - bei Zinsen:
 
-         - 0 % bei Zinsen (Zinsen sind gemäss Doppelbesteuerungsabkommen nur in der Schweiz steuerbar).
+         - 0% bei Zinsen (Zinsen sind gemäss Doppelbesteuerungsabkommen nur in der Schweiz steuerbar).
 
      - Die Reduktion der US-Quellensteuer von 30 Prozent auf 0, 5 oder 15 Prozent
        ist nur möglich für Depotbanken,
@@ -95,15 +95,15 @@
 
      - bei Dividenden:
 
-       - 25 % bei qualifizierten Beteiligungen von Gesellschaften am dividenden-zahlenden Unternehmen.
+       - 25% bei qualifizierten Beteiligungen von Gesellschaften am dividenden-zahlenden Unternehmen.
          Eine qualifizierte Beteiligung liegt vor,
          wenn die Gesellschaft mehr als 10 Prozent der Aktien des dividenden-zahlenden Unternehmens besitzt.
 
-       - 15 % in allen anderen Fällen.
+       - 15% in allen anderen Fällen.
 
      - bei Zinsen:
 
-       - 30 %
+       - 30%
 
    - Der zusätzliche Steuerrückbehalt erfolgt nur durch Depotbanken in der Schweiz.
      (Ausländische Depotbanken kann die Schweizer Behörde naturgemäss nicht zwingen,
