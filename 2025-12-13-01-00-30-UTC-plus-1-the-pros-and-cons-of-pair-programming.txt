@@ -1,0 +1,42 @@
+2025-12-13-01-00-30-UTC-plus-1-the-pros-and-cons-of-pair-programming.txt
+
+
+
+(
+yt
+>>
+Modern Software Engineering
+>>
+The Pros & Cons Of Pair Programming (With Examples)
+)
+
+    More code is rarely a good idea.
+
+    For the best code, what we'd really like is to type less but achieve more.
+
+    The simpler our code for a set of behaviors, the better it is.
+
+    ...
+
+    so,
+    trying to find simple solutions to problems
+    is much more important than typing fast
+    and
+    much more efficient than maximizing the rate at which we can create crap code
+
+
+
+
+    in this example,
+    we're pairing remotely
+    (
+    but, to be honest,
+    with effective modern tools like Tuple,
+    there is very little difference in our experience of pairing
+    than if we were sitting together;
+
+    Tuple makes remote screen and keyboard sharing seamless
+
+    I should remind you though that
+    Tuple are one of our Channel sponsors and we do thank them for it
+    )
