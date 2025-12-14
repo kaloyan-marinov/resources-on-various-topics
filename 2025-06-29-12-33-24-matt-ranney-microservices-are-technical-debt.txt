@@ -121,14 +121,16 @@ transcript:
 
     and so
     you could say "well, you shouldn't do microservices!"
-    (and maybe maybe you shouldn't)
-    but they are technical debt [- in a genuinely positive sense! - b/c] they helped people move faster for a time
+    (and maybe maybe you shouldn't);
+    more importantly though, do recognize that
+    they are technical debt [- in a genuinely positive sense! -
+    b/c] they [can help a group of collaborating teams] move faster for a time
 
-    it's not like it's black or white;
-        it's not like "oh microservices are bad";
-        like:
-            you've got something in exchange ... for your debt;
-            you borrowed against someone else's productivity in the future
+    it's not ... black or white;
+        it's not like "oh, microservices are bad!";
+
+        you've got something in exchange ... for your debt;
+        [but recognize that] you [have] borrowed against someone else's productivity in the future
 
 
 
