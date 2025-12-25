@@ -1,0 +1,30 @@
+2025-07-15-09-43-00-UTC-plus-2-resource-for-checking-if-all-import-statements-in-all-python-files-are-correct.txt
+
+source:
+
+    (
+    yt
+    >>
+    Next Day Video
+    >>
+    Deleting Code Is Hard And You Should Do It [= a talk by Jack Diederich]
+    )
+
+    https://www.youtube.com/watch?v=Ajln82vwycs
+
+
+
+content:
+
+    if your repository's Python files live in a sub-folder `./src/`,
+    then it is possible to check
+    whether the import statements within each file are correct
+
+    to perform that check, 
+    run the following command:
+    ```
+    find src/ -name '*.py' \
+        | sed 's^src/\(.*\)\.py^\1^' \
+        | sed 's^/^.^g' \
+        | xargs -I filename poetry run python -c "import filename"
+    ```
