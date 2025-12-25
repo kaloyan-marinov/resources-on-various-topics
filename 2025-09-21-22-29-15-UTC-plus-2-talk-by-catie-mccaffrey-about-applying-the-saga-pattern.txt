@@ -1,0 +1,89 @@
+2025-09-21-22-29-15-UTC-plus-2-talk-by-catie-mccaffrey-about-applying-the-saga-pattern.txt
+
+
+
+source:
+    (
+    yt
+    >>
+    GOTO Conferences
+    >>
+    Applying the Saga Pattern • Caitie McCaffrey • GOTO 2015
+    )
+
+
+
+transcript:
+
+    ...
+
+    serializability is a guarantee that things look like they sort of happen sequentially
+
+    atomicity is this idea that it either all happened or it didn't
+
+    Consistency is application-level consistency.
+    It's not linearizability consistency
+    but it's basically that our system is still in a valid state
+        at the start of the transaction
+        at the end of the transaction
+            the system is in a valid state
+        and ... whether the transaction completed or did not
+
+    isolation is that these transactions do not affect each other if they are running concurrently
+
+
+    durability is this idea that,
+    once we've committed something,
+    it persists and is long-lived and ... we don't lose data
+
+    ...
+
+
+
+    failure management
+
+    I also really just like sagas as a whole
+    because they're a failure management pattern 
+
+    building distributed systems,
+    we should just plan for everything to fail
+
+        especially if you're in the cloud
+
+        especially if you don't like own your own networks.
+
+        Even if you own your own networks, you should plan for everything to fail.
+
+    ...
+    forcing your application developers
+    to think about failure as ... the for first and foremost in your design pattern
+    is going to help you build more robust systems
+    and
+    it's going to help you build ... less fragile systems
+    because you don't just code the golden path...
+
+        You actually are having to think about ... well what happens
+        when we go off of the golden path
+
+    ...
+
+    Recap
+
+    sagas are these long-lived distributed transactions
+    and
+    ... I think they're a really helpful way to think and design and program against
+
+    you are trading off atomicity for availability.
+
+        if you cannot tolerate seeing partial execution of the thing happening in the saga,
+        then you can't do this.
+
+        But in most cases, we can do this ... And then we can take corrective actions
+
+        ... my skew in the world is towards highly available systems ... Games, ..., social media, stuff like that
+
+    failure management pattern ...
+
+        it helps you build more reliable and robust systems ... and less fragile systems
+
+    ...
