@@ -1,0 +1,22 @@
+2025-08-10-12-21-55-UTC-plus-2-the-zen-of-python-abridged-and-adapted-by-marinov-kaloyan.txt
+
+
+
+Simple is better than complex.
+Complex is better than complicated.
+
+If [an idea] is hard to explain, it's a bad idea.
+If [an idea] is easy to explain, it may be a good idea [but that's not guaranteed].
+
+
+
+Explicit is better than implicit.
+
+In the face of ambiguity, refuse the temptation to guess.
+
+
+
+Now is better than [later]/never.
+Although [later] is often better than *right* now.
+
+[...] practicality beats purity.
