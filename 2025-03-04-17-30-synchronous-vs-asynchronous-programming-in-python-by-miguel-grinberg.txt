@@ -1,0 +1,43 @@
+2025-03-04-17-30-synchronous-vs-asynchronous-programming-in-python-by-miguel-grinberg.txt
+
+
+
+source:
+
+    (
+    Miguel Grinberg
+    >>
+    Sync vs Async Python:
+    What is the Difference?
+    )
+
+    https://blog.miguelgrinberg.com/post/sync-vs-async-python-what-is-the-difference
+
+
+
+notes:
+
+    To benefit from the async style,
+    an application needs to have tasks that
+    are often blocked by I/O
+    and
+    don't take too much CPU work.
+
+    Web applications are normally a good fit,
+    in particular if they need to handle large amounts of client requests.
+
+
+
+    section: "Two Ways to Do Async in Python"
+
+        [TBD]
+
+
+
+    The 2 most important takeaways [to] remember are:
+
+        An async application will only do better than a sync application under high load.
+
+        Thanks to greenlets,
+        it is possible to benefit from async
+        even if you write normal code & use traditional frameworks such as Flask or Django.

@@ -1,0 +1,23 @@
+2025-03-04-18-13-synchronous-vs-asynchronous-programming-in-python-by-miguel-grinberg.txt
+
+
+
+source:
+
+    (
+    Miguel Grinberg
+    >>
+    Is Python Really That Slow?
+    )
+
+    https://blog.miguelgrinberg.com/post/sync-vs-async-python-what-is-the-difference
+
+
+
+notes:
+
+    there are a lot of applications that are not affected by [the GIL], namely
+
+        those that do not use threads,
+
+        or those that do use threads, but are mostly I/O bound.
