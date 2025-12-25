@@ -1,0 +1,494 @@
+2025-09-21-19-01-17-UTC-plus-2-talk-by-dave-farley-that-says-do-not-do-end-to-end-testing-e2e.txt
+
+
+
+source:
+    (
+    yt
+    >>
+    Modern Software Engineering
+    >>
+    Don't Do E2E Testing!
+    )
+
+
+
+transcript:
+
+    end-to-end testing sounds like a great idea
+    but it's really not
+
+    the problem is that,
+    for anything other than simple systems,
+    end-to-end tests can be big, complex, fragile
+
+    on the other hand thoroughly testing your system in production-like test environments
+    ... scenarios is a great idea
+
+    so how are these two ideas different
+    and
+    how do we achieve the good one while avoiding the traps of the bad one?
+
+        oh - and it probably depends on what you mean by "and"
+
+    Welcome
+
+        what most organizations mean when they
+
+        talk about end-to-end testing is testing
+
+        the whole system in some environment
+
+        that is a mirror of production
+
+        this is a good idea we want to be able
+
+        to test the deployment of our system in
+
+        a lifelike setting
+
+            checking things like
+
+            its configuration and any infrastructure
+
+            changes that might affect its Behavior
+
+            as well as validating that the new
+
+            features that we've added actually work
+
+            and reassuring ourselves that we haven't
+
+            broken anything that was working before
+
+        the trouble is how do we do that
+    
+    Staging Environment
+
+        the most common version of end-to-end
+
+        testing that I've seen in practice is to
+
+        create something that's often called a
+
+        staging environment
+
+        
+
+        the idea of this
+
+        particularly in teams building big
+
+        software is to maintain a kind of Shadow
+
+        copy of the production system
+
+        Team Works on some changes for their
+
+        system and then as part of the release
+
+        process they're required to deploy the
+
+        new versions to the staging environment
+
+        before release where they will be
+
+        evaluated usually with manual testing
+
+        alongside every other team's new
+
+        versions to check that everything works
+
+        together
+
+
+
+        often all of this is carried out by
+
+        people in teams that had nothing to do
+
+        with the creation of the software the
+
+        Ops people are deploying the changes
+
+        probably haven't seen them before
+
+            in
+
+            seriously dysfunctional teams they may
+
+            not even know what the changes do
+
+        
+
+            testers in places that test this way are
+
+            usually paranoid and with some good
+
+            reasons so they test everything
+
+
+
+            this is
+
+            slow expensive and doesn't give a very
+
+            high quality result
+
+
+
+            the testing has
+
+            happened too late to help build quality
+
+            into the product
+
+
+        it's just used as a gatekeeping process
+
+        to hopefully catch the biggest mistakes
+
+
+
+        however diligent the planning the ways
+
+        in which software and the people who
+
+        build it can screw up are many and
+
+        varied
+
+        in organizations that work like this
+
+        they're almost inevitably working very
+
+        slowly
+
+
+
+        so the gap between each release
+
+        and so each end-to-end integration test
+
+        is usually weeks or months
+
+        that means that the amount of change
+
+        going into each release is huge,
+
+        which it means in turn that
+
+            the chance of
+
+            something being wrong increases
+
+            and
+
+            the costs of finding it and correcting it when something does go wrong goes up
+
+            exponentially with the number of changes
+
+            too
+    
+
+
+        ...
+
+    Test Isolation
+
+        the key idea here is test isolation a
+
+        good test is deterministic and atomic
+
+        it's going to put our system under test
+
+        into a precise predictable State the
+
+        state that we need it to be in in order
+
+        to run our test and every time that we
+
+        run this test for the same version of
+
+        the software whatever the circumstances
+
+
+
+    Test Specific
+
+        we want our tests to be targeted and
+
+        specific actually more formally I
+
+        recommend that test should be
+
+            concise
+
+            accurate
+
+            understandable
+
+            and durable
+
+                (
+                =
+
+                these tests aren't easily broken by
+
+                changes to the system
+
+                in fact in my preferred approach these
+
+                tests will never be wrong because of
+
+                changes to the system under test they
+
+                may fail when the plumbing breaks but
+
+                then we can fix the plumbing but they're
+
+                only wrong if the users no longer want
+
+                the thing that the tests assert
+
+                )
+
+
+
+    Continuous Delivery
+
+        what we'd really like instead is to
+
+        deploy our system so that as far as it's
+
+        concerned it's in production
+
+        same infrastructure same configuration
+
+        as far as makes sense and using the same
+
+        deployment mechanisms
+
+        then we'd like to connect it to a test
+
+        rig of some kind test infrastructure
+
+        that allows us under test control to put
+
+        our system under test into exactly the
+
+        state that we'd like it to be in
+
+        communicating through its natural
+
+        existing exposed interfaces
+
+
+
+        then we
+
+        invoke the behavior that we're
+
+        interested in testing and we'll collect
+
+        the outputs from our system via its
+
+        natural outputs and make assertions on
+
+        them
+
+
+
+        so these kind of tests are Black Box
+
+        tests that run through the exposed
+
+        interfaces to our system but where the
+
+        tests fake all necessary inputs and
+
+        collect resulting outputs
+
+
+
+        ...
+
+        will replace system a and system C with
+
+        fake versions of them so that we can
+
+        more accurately control our system under
+
+        test
+
+        so I guess these tests are end to end as
+
+        far as our system is concerned
+
+        (
+        but not
+
+        as far as systems that are outside of
+
+        our control and responsibility to test
+        )
+
+        so one of the important decisions to
+
+        make when automating your testing is to
+
+        decide what constitutes our system what
+
+        part of the system are we responsible
+
+        for and responsible for testing
+
+
+
+        continuous delivery helps with this
+        decision
+
+
+
+        my preferred quick way to
+
+        describe continuous delivery is that we
+
+        work so that our software is always in a
+
+        releasable state
+
+
+
+        what does it take to decide if our
+
+        software is releasable?
+
+            that's obviously specific to each system
+
+            but one thing is for sure
+
+            if at the end of evaluating your change
+
+            you or someone else has more testing to
+
+            do before release then it's not
+
+            releasable
+
+
+
+            so the standard here is that if your
+
+            deployment pipeline says all is good you
+
+            should be happy to release into
+
+            production without any more work
+
+            so the scope of a deployment pipeline is
+
+            a releasable unit of software whatever
+
+            that means for your system or subsystem
+
+            and acceptance tests are by definition
+
+            designed to determine if your software
+
+            is ready to release
+
+            so the acceptance tests test a
+
+            releasable unit of software too
+
+            they confirm that everything in the
+
+            deployment pipeline works as expected
+
+
+
+    User Contract Testing
+
+
+        we fake interactions under
+
+        test control between our software and
+
+        systems that it collaborates with
+
+
+
+        this gives us what I call «measurement points» for our system
+
+        places where we can provide inputs and
+
+        collect outputs
+
+        to make our tests realistic
+        but also as simple as we can get for our system
+
+        these may still be complex tests but
+
+        they will be focused only on the system
+
+        that we are building
+
+
+
+        you may be worrying about the
+
+        interactions at these points
+
+            and you're
+
+            right - these are why people don't feel
+
+            safe without end-to-end tests
+
+
+
+            but if we
+
+            have thoroughly tested our system with
+
+            our close-to-the-edges acceptance tests,
+
+            I mean all we're really interested in
+
+            about these conversations now is
+
+                does A talk to us in the way that we expect
+
+                and
+
+                can we talk to C as we expect?
+
+
+
+        when we think of these tests like that
+
+        then we don't need lots of complex
+
+        testing at these points
+
+            we need more focused tests targeted at verifying these interfaces
+
+    
+
+            these more focused tests are actually better at verifying these interfaces too
+            than just throwing usually boring cases through the whole end-to-end system
+
+    
+
+        this approach is something that I've mentioned before:
+
+            «contract testing»
+
+        there is a step further that we can take:
+            
+            ...
+        
+            this approach is sometimes called «user contract testing»
+
+    ...
