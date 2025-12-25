@@ -1,0 +1,56 @@
+2025-09-21-19-44-57-UTC-plus-2-CodeOpinion-video-_-david-fowler-on-design-APIs-and-avoiding-dogma.txt
+
+
+
+source:
+    (
+    yt
+    >>
+    CodeOpinion
+    >>
+    David Fowler on Design, APIs, and Avoiding Dogma
+    )
+
+
+
+transcript:
+    
+    David Fowler:
+    
+        can you describe Aspire to me ... in one paragraph?
+
+
+
+    Derek Comartin:
+
+        not even a paragraph. I almost have one word...
+        I'm going to say ... it's composition.
+
+
+
+    David Fowler:
+    
+        Yeah! Yes!
+        ...
+        That's the right word!
+        ...
+
+            Q: of what?
+
+            A: of your app - all the pieces
+
+
+    Derek Comartin:
+    
+        almost every app is distributed
+
+            you could have a monolith
+
+            it has a database
+
+            it has a cache
+
+    David Fowler:
+
+        Exactly!
+        You got it!
