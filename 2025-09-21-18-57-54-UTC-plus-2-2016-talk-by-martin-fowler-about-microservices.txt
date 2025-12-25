@@ -1,0 +1,272 @@
+2025-09-21-18-57-54-UTC-plus-2-2016-talk-by-martin-fowler-about-microservices.txt
+
+
+
+source:
+    (
+    yt
+    >>
+    GOTO Conferences
+    >>
+    Microservices • Martin Fowler • YOW! 2016
+    )
+
+
+
+transcript:
+
+    1. componentization via services
+
+        component
+        :=
+        a piece which is
+        independently replaceable
+        and
+        independently upgradeable
+
+    2. organized around business capabilities
+
+        talks about how we organize people
+        (as opposed to anything else)
+
+        keep the sizes of the teams small
+
+        Amazon's notion of «a 2-pizza team»
+
+        [each team] should be directly traveling through to the customer
+        (= have some customer interaction directly in place)
+
+            customer :=
+            customer of the business
+            or
+            an end-user within the business
+
+        so,
+        it's not just the size, it's also this vertical nature
+
+    3. products not projects
+
+    4. smart endpoints and dumb pipes
+
+        avoid smart middleware that's often called «ESB»
+        ( := «Enterprise Service Bus» or «Egregious Spaghetti Box» )
+
+        move the smarts out of the bus and into the systems themselves
+
+
+
+        every service has got to do its own;
+        the communication between them - we keep really simple:
+
+            REST HTTP calls (and things of that kind)
+
+            or,
+
+            if you are using messaging, you just use a _simple_ messaging layer
+
+    5. decentralized governance
+
+    6. decentralized data management
+
+        [data or] database or data storage is always private to a service
+
+        if 2 separate services need to talk to each other,
+        they talk to each other through «the service-collab protocols»
+        and
+        they talk through service endpoints
+
+        you can actually share one physical relational database
+        but
+            they have to separate schemas
+            and
+            there are no links between the different schemas
+
+            (all the linkage occurs through the services)
+
+    7. infrastructure automation
+
+        [will talk about that in a separate talk]
+
+    8. design for failure
+
+    9. evolutionary design
+
+    ---
+
+    Are Microservices just SOA (= Service-Oriented Architecture)?
+
+        for some people who have experienced SOA,
+        what SOA means to them _is_ Microservices
+
+        for others, however,
+        it means the «Egregious Spaghetti Box»
+
+        the problem was that
+        SOA itself never really had a very [universally accepted / precise] definition
+
+    How Big?
+
+        this is really about the people, not about the software
+
+    One thing that's very important to realize is
+
+        like most architectural techniques,
+        [microservice architecture] is not the future of computing
+
+    Microservices have costs and benefits
+
+        benefits
+
+            strong boundaries between your module / components
+
+            indepedent deployment
+
+            technology diversity
+
+        costs
+
+            distributed system
+
+                this is not a card you want to play lightly
+
+                communications
+
+                    [monolith:]         fast, in-process method calls
+
+                    [microservices:]    inter-process calls,
+                                        which are going to be orders of magnitudes slower
+
+                                        you start using techniques for asynchronous programming
+
+                                        asynchronous software is really hard to debug
+
+            eventual consistency
+
+                no every service is going to be quite in tune with everything else
+
+                extra complexity
+
+            operational complexity
+
+                people say, "the tools will solve it! Kubernetes! Docker!"
+
+                it's still complexity compared to a monolith - you're taking on more stuff
+
+    summary
+
+        [fuzzy term, but bear with me]
+        base complexity of a system
+        :=
+        not that much logic, not that much load on it
+
+        for a system with a low base complexity,
+        a monolith is better than microservices
+
+        as base complexity rises,
+        then microservices become more attractive
+
+            and, again:
+            one of the core things, I think, to look at is people
+
+            if you've got 5 people,
+            you probably don't need microservices
+
+            if you need 50 people,
+            well then you should be considering [microservices]
+
+            if you're in hundreds of people,
+            then you'll definitely need to break it up _somehow_
+            (
+            you can't have a single cohesive team of 500 people
+            )
+
+
+
+        so, «microservices» is not the best, compared to a monolith
+
+        the choice between a monolith and microservices
+        is
+            an area with 2 obvious endpoints
+            and
+            a _very_ large grey band in between
+
+            and
+            you're gonna have to make a judgement call as to which way to go
+
+        in particular,
+        be very ware of using microservices in a domain you don't already know well
+
+            in fact, one argument is to say:
+            if you're building a new system,
+            you should
+                start with a monolith
+                and
+                expect to replace it with microservices later if you're lucky to run into the kinds of problems that raise up ... base complexity
+
+            and that's - I think - fairly good advice
+
+                even the people who will argue against it will say,
+                "If you don't know your domain, microservices aren't a good place to start"
+
+                b/c the problem is:
+
+                    early on you don't know where the [strong module] boundaries are gonna be
+
+                    so who knows if you're gonna get them right?
+
+                    in a monolith,
+                    you're better off because you can refactor things more easily across the boundaries
+
+
+
+        one last thing:
+        there are certain other skills you're gonna need if you're gonna be able to do the microservices thing at all
+
+            provision your software rapidly
+
+            good monitoring
+
+            provision all your servers and stuff rapidly
+
+            bring in this whole notion of DevOps
+
+        (just to deploy half a dozen microservices, you need those capabilities)
+
+        to get serious about microservices, you need a lot more:
+
+            traceable business transactions
+
+            continuous delivery
+
+            product-centered teams
+
+            multi-dev environment
+
+            infrastructure as code
+
+
+
+        the main thing to realize is that
+
+            monoliths and microservices - it's a choice
+
+            it's a choice that depends on
+            the context that you're in
+            (= the complexity of the application you're trying to do)
+
+            and really the heart of it is the team organization:
+            how do you want to organize people?
+
+                when I talk to people who have used microservices from the beginning,
+                that was the main driver
+
+                (
+                ...
+                people always complain about silos
+                but it's human nature to form silos
+                ...
+                what you want to do is to want to arrange things so that
+                those silos are in the most productive manner possible
+
+                and that is really what's driving a lot of interest in microservices
+                )
