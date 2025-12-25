@@ -1,0 +1,208 @@
+2025-09-16-16-12-12-UTC-plus-2-ryan-peterman-resource-titled--david-fowler-_-intern-to-microsoft-distinguished-engineer-in-11-promotions-_-career-story.txt
+
+
+
+source:
+    (
+    yt
+    >>
+    Ryan Peterman
+    >>
+    [David Fowler -] Intern to Microsoft Distinguished Engineer in 11 Promotions (Career Story)
+    )
+
+
+
+transcript:
+
+
+
+Intro
+
+...
+This is David Fowler.
+He got promoted 11 times from an intern to a distinguished engineer, all at Microsoft.
+And I asked him about everything he learned along the way.
+
+
+
+....
+
+
+
+Microsoft culture after Satya
+
+did you notice anything
+
+internally like the culture shifting when Satya became CEO?
+
+Huge. I mean, ... I always tell new hires that it's really hard to
+
+think about the culture shift between Satya and Balmer because ... I lived it, right?
+
+...
+
+Probably one of the biggest ones that ... I noticed because I I experienced
+
+this when I joined there was teams competing on the same end ... goal ...
+
+
+
+I was like very early in career like
+
+observing how people interacted and culture- wise and just the way people interacted changed
+
+... meeting culture
+
+like how means would would appear like emails things that seem so obvious in
+
+hindsight
+
+like if I look at how people would communicate in meetings now versus emails versus how I used to work
+
+like remote friendliness versus like how people work in teams
+
+
+
+like I I remember being in a meeting and someone raising
+
+their hand on teams
+
+and I was like, "raise your hand for talk ... what? this is not Microsoft!"
+because ... I had grown up in a culture
+where you would just talk right you just talk
+
+    ...
+
+    you wait for a pause and you talk[;] ...
+    you don't raise your hand to talk ...
+
+
+
+a lot more consideration for everyone else
+
+
+
+it wasn't just what's it called um highest paid person's opinion
+
+I think that's that's kind of how Microsoft felt like when I joined like if you were in a meeting with people
+
+that are very senior um hard to get a worded sometimes and ... if the most the most senior person was loud
+
+and like aggressive  ... people that didn't think that way in the moment would not get safe.
+
+
+
+...
+collaboration became a thing that was part of your review
+
+
+
+...
+the behaviors that were that were being modeled by like the leaders like literally in meetings,
+
+people raising their hands, people calling people who haven't spoken. Like imagine if you're in a meeting and
+
+there's someone really quiet that has really good thoughts, but maybe they don't they don't like to speak up in
+
+meetings, pulling it out that person in in the meeting. Like I remember when that first happened, I had never seen it
+
+before. I had never seen someone say, "Um, hey Ryan, you're quiet. You've been quiet the whole time. What's your
+
+opinion on this matter?" ...
+
+
+
+Now ... It's much better, much more considerate for others.
+Um, a lot less people screamy, shouty.
+I was in like really early in my career, people were like shouting.
+
+
+
+When you look back on your your career so far, do you have any major regrets that people can learn from?
+
+...
+I would say early in my career, ... I was very arrogant.
+.... I would say I was lacking some empathy in a bunch of different places.
+
+One of the big shifts
+that, I think, my brain made over time
+[was]
+learning how to
+    build teams
+    and
+    [achieve] impact through others
+was
+[through[]] patience.
+Patience, empathy.
+
+
+
+... those two traits
+
+helped help a lot with like growing teams and growing like influence and
+
+people, right? It's not just because you're right.
+
+
+
+Being right means nothing.
+
+
+
+It's just not important, right? Being right is like one of many things. ...
+I think learning over time that this ... doesn't really matter as much
+because there's a lot of shades of gray when you're in [software engineering].
+
+This is not the most important thing.
+
+
+
+...
+I have a lot more self-awareness now whenever that's not the most important thing for the for the moment, even
+
+though it's like a thing still. I learned over time how to dial it.
+
+
+
+Um, when you look back on your career, what was your work life balance like throughout?
+
+    I used to answer this by saying um there was no balance.
+    There was just like work hard, play hard kind of thing.
+
+    I would say now someone told me recently that
+
+        work life balance isn't about 9 to 5 and stopping.
+
+        It's about what things give you energy and what things drain energy from you.
+
+
+
+people always ask me
+
+    hey what book did you read
+
+    ... what did you do to become a good software engineer
+
+and I'm like:
+I wrote and read a lot of code,
+like just anything you can get your hands on and there's so much more code.
+No, there you can read, consume, and write.
+
+    Um, and I'm not sure if it's good advice,
+
+    but what I know is that I did not get good at software engineering or building building a programming, whatever you
+
+    want to call it, from like seeing something online or reading a a blog
+
+    post or it's like just do it.
+
+    Like build everything. databases, distributed systems, games, ...
+    every everything you build will teach you a new skill that you don't even know you have until later on.
+
+    Um, my GitHub is a graveyard of projects.
+    I just build stuff and put it on there.
+
+
+
+    that pattern of ... "I need to know how this thing works" has served me ... to this day ...
