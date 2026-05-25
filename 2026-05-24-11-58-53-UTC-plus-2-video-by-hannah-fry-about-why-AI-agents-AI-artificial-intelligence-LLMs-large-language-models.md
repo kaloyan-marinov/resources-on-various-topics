@@ -74,6 +74,27 @@ who, before making any decision, insists on re-reading every email they've ever 
 
 ---
 
+Those little puzzles that you sometimes see online - working out a number in a strange font. 
+[An AI Agent can] complete a few of these,
+but on the whole, they actually work quite well at detecting bots.
+
+The earliest computer scientists, they promised us a future of human brains and robot bodies.
+But maybe the real future is robot brains and human bodies.
+Because the new trend that is emerging for [AI agents] to get around this issue are what's known as «CAPTCHA farms»,
+where meaty flesh people are paid a few pence by AI to solve these puzzles all day long.
+
+There is now, by the way, a whole online marketplace
+where AI agents can hire humans to do the things that they can't.
+You've got people offering
+- to make deliveries,
+- to take photos of locations,
+- to check whether a shop is open.
+- Basically, anything that a disembodied AI brain can't physically do.
+...
+So, we have autonomous AI agents already out there hiring humans to do their bidding ...
+
+---
+
 [
 Nicklas Berild Lundblad;
 Senior Fellow at the TUM Think Tank in Munich;
