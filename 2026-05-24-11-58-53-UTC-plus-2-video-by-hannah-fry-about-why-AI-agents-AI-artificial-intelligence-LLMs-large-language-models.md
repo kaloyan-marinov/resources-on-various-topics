@@ -32,7 +32,7 @@ These are the companies that had spent years saying they were being careful
 and now they are sprinting
 because one Austrian developer in one weekend had changed the calculation for all of them.
 
-
+---
 
 how on earth does this thing work?
 How can it be possible to build something like this in a weekend?
@@ -52,27 +52,27 @@ again and again, dozens of times a minute, until the job is done.
 OpenClaw [is] just a loop that borrows intelligence from [an LLM] that already exists.
 But because it is a loop, it can keep going until the job is done.
 
-
+---
 
 One thing we discovered quite quickly is that
 running an AI agent isn't free.
 The large language models which [an AI agent] relies on charge for every fragment of text that's sent.
 And [an AI agent] is sending a lot of text.
 
-    Reading all of the conversation that we've had.
-    It's sending all of these screenshots off.
+- Reading all of the conversation that we've had.
+  It's sending all of these screenshots off.
 
-    Because every time that [the AI agent] decides what to do next,
-    [the AI agent] resends literally everything.
-    All our instructions, all the chat history, all the sites that [the AI agent]'s already checked -
-    the whole conversation, from the beginning, every single time.
+- Because every time that [the AI agent] decides what to do next,
+  [the AI agent] resends literally everything.
+  All our instructions, all the chat history, all the sites that [the AI agent]'s already checked -
+  the whole conversation, from the beginning, every single time.
 
 The longer the conversation, the more expensive it becomes.
 
 It's a bit like hiring someone
 who, before making any decision, insists on re-reading every email they've ever received. 
 
-
+---
 
 [
 Nicklas Berild Lundblad;
@@ -108,7 +108,7 @@ There's something about this full enforcement of the law through abundant govern
 that actually comes very close to a dictatorship
 although we're still in a democracy.
 
-
+---
 
 Abundant agency in the hands of governments is potentially terrifying.
 
@@ -116,9 +116,9 @@ But what about in the hands of an individual?
 Because one thing that you can say about humans is that we have no shortage of ideas.
 What we have is a shortage of time and energy and, frankly, the will to deal with the admin.
 
+---
 
-
-There's this thing with AI its called the lethal trifecta, which is:
+There's this thing with AI its called «the lethal trifecta», which is:
 if they've got access to private information,
 if they've got internet access,
 and if someone can give them an instruction that's untrusted,
