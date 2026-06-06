@@ -258,3 +258,34 @@ Security:
   - `/`
   - `/docsets`
   - `/fr/docs`
+
+---
+
+«Cross-site requests» are requests where the [site](
+    https://developer.mozilla.org/en-US/docs/Glossary/Site
+) (the registrable domain) and/or the scheme (http or https) do not match the site the user is currently visiting. This includes:
+
+- requests sent when links are clicked on other sites to navigate to your site, and
+
+- any request sent by embedded third-party content.
+
+
+
+The `SameSite` attribute:
+
+- lets servers specify whether/when cookies are sent with cross-site requests
+
+- helps to prevent leakage of information,
+  preserving user [privacy](
+    https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies#privacy_and_tracking
+  ) and providing some protection against [cross-site request forgery](
+    https://developer.mozilla.org/en-US/docs/Glossary/CSRF
+  ) attacks
+
+- takes 3 possible values:
+
+  - `Srtict`
+
+  - `Lax` (default, if no `SameSite` attribute is set)
+
+  - `None`
