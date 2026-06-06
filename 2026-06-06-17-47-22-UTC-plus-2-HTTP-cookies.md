@@ -133,7 +133,7 @@ Set-Cookie: tasty_cookie=strawberry
 
 ---
 
-When a new request is made, the browser usually sends previously stored cookies for the current domain back to the server within a `Cookie` HTTP header:
+When a new request is made, «the browser engine» usually sends previously stored cookies for the current domain back to the server within a `Cookie` HTTP header:
 
 ```shell
 GET /sample_page.html HTTP/2.0
@@ -143,3 +143,40 @@ Cookie: yummy_cookie=chocolate; tasty_cookie=strawberry
 
 ---
 
+Each `Set-Cookie` header within an HTTP response can be supplemented with additional attributes,
+which change how the client's browser is allowed to work with the cookie in question.
+
+- If a `Set-Cookie` header is supplemented with an `Expires=Thu, 31 Oct 2021 07:28:00 GMT;` attribute,
+  the browser will delete the cookie after the date specified
+
+- If a `Set-Cookie` header is supplemented with a `Max-Age=2592000` attribute,
+  the browser will delete the cookie after the period specified
+
+- Cookies without a `Max-Age` or `Expires` attribute – are deleted when the current session ends. The browser defines when the "current session" ends, and some browsers use session restoring when restarting. This can cause session cookies to last indefinitely.
+
+---
+
+To update a cookie via HTTP,
+the server can send a `Set-Cookie` header with the existing cookie's name and a new value. For example:
+
+```shell
+Set-Cookie: id=new-value
+```
+
+«JavaScript code running in a webpage»:
+
+- can create new cookies via JavaScript using
+  the [`Document.cookie`](
+    https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie
+  ) property,
+  or the asynchronous [Cookie Store API](
+    https://developer.mozilla.org/en-US/docs/Web/API/Cookie_Store_API
+  )
+
+- can access existing cookies and set new values for them
+
+- for security purposes,
+  can't change cookie values
+  by sending an updated `Cookie` header directly when initiating a request
+
+There are good reasons why you shouldn't allow JavaScript to modify cookies at all. See the next sectio for more details.
