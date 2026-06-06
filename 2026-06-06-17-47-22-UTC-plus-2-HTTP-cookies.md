@@ -113,3 +113,33 @@ to track users' web browsing habits. This can also be done to some extent by usi
 - From this point on, the cookie will automatically be sent by the browser to the server every time a new page from the site is requested. The server not only sends the page as usual but also stores the URL of the requested page, the date/time of the request, and the cookie in a log file.
 
 By analyzing this log file, it is then possible to discover which pages the user has visited, in what sequence, and for how long.
+
+
+
+## `Set-Cookie` headers
+
+After receiving an HTTP request, a server can send one or more `Set-Cookie` headers with the response, each one of which will set a separate cookie.
+
+The following HTTP response instructs the receiving browser to store a pair of cookies:
+
+```shell
+HTTP/2.0 200 OK
+Content-Type: text/html
+Set-Cookie: yummy_cookie=chocolate
+Set-Cookie: tasty_cookie=strawberry
+
+[page content]
+```
+
+---
+
+When a new request is made, the browser usually sends previously stored cookies for the current domain back to the server within a `Cookie` HTTP header:
+
+```shell
+GET /sample_page.html HTTP/2.0
+Host: www.example.org
+Cookie: yummy_cookie=chocolate; tasty_cookie=strawberry
+```
+
+---
+
