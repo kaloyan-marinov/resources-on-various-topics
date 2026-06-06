@@ -133,7 +133,7 @@ Set-Cookie: tasty_cookie=strawberry
 
 ---
 
-When a new request is made, «the browser engine» usually sends previously stored cookies for the current domain back to the server within a `Cookie` HTTP header:
+When a new request is made, the «browser engine» usually sends previously stored cookies for the current domain back to the server within a `Cookie` HTTP header:
 
 ```shell
 GET /sample_page.html HTTP/2.0
@@ -180,3 +180,39 @@ Set-Cookie: id=new-value
   by sending an updated `Cookie` header directly when initiating a request
 
 There are good reasons why you shouldn't allow JavaScript to modify cookies at all. See the next sectio for more details.
+
+---
+
+Security:
+
+- If a `Set-Cookie` header is supplemented with an `HttpOnly` attribute,
+  then:
+
+  - the «browser engine» is still able to read and send such a cookie
+    (as part of every qualifying request)
+
+  - but «JavaScript code running in a webpage» is completely blocked from reading it
+    via `Document.cookie` or any other [browser] API
+
+  ---
+
+  This precaution helps mitigate [cross-site scripting (XSS) attacks](
+    https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/XSS
+  ).
+
+  The browser's internal cookie-handling machinery is opaque to the page.
+
+- If a `Set-Cookie` header is supplemented with an `Secure` attribute,
+  then:
+  
+  - it is only sent to the server with an encrypted request over the HTTPS protocol.
+  
+  - It's never sent with unsecured HTTP (except on `localhost`)
+
+  - Insecure sites (with http: in the URL) can't set cookies with the `Secure` attribute.
+
+  ---
+
+  [This precaution helps mitigate [man-in-the-middle attacks](
+    https://developer.mozilla.org/en-US/docs/Glossary/MitM
+  ).]
