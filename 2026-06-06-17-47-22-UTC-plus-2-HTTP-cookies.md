@@ -141,7 +141,7 @@ Host: www.example.org
 Cookie: yummy_cookie=chocolate; tasty_cookie=strawberry
 ```
 
----
+## Attributes within a `Set-Cookie` header 
 
 Each `Set-Cookie` header within an HTTP response can be supplemented with additional attributes,
 which change how the client's browser is allowed to work with the cookie in question.
@@ -216,3 +216,45 @@ Security:
   [This precaution helps mitigate [man-in-the-middle attacks](
     https://developer.mozilla.org/en-US/docs/Glossary/MitM
   ).]
+
+---
+
+- If the `Set-Cookie` header does not specify a `Domain` attribute,
+  the cookie is available on the server that sets it
+  but *not on its subdomains*.
+
+- If the `Set-Cookie` header specifies a `Domain` attribute,
+  the cookie is available on the specified server and its subdomains.
+
+  > Note that
+  >
+  > a server can only set the `Domain` attribute to its own domain or a parent domain,
+  >
+  > not to a subdomain or some other domain.
+
+---
+
+- The `Path` attribute indicates a URL path that must exist in the requested URL
+  in order to send the `Cookie` header.
+
+- The `%x2F` ("/") character is considered a directory separator,
+  and subdirectories match as well.
+
+  For example, if the HTTP response sets
+  
+  ```shell
+  Set-Cookie: id=a3fWa; Expires=Thu, 21 Oct 2021 07:28:00 GMT; Secure; HttpOnly; Path=/docs
+  ```
+
+  then these request paths match:
+
+  - `/docs`
+  - `/docs/`
+  - `/docs/Web/`
+  - `/docks/Web/HTTP`
+
+  but these request paths don't:
+
+  - `/`
+  - `/docsets`
+  - `/fr/docs`
