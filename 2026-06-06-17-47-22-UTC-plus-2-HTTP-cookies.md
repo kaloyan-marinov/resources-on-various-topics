@@ -482,11 +482,11 @@ The browser will reject cookies with these prefixes that don't comply with their
 
 - Cookies with names starting with `__Secure-`
 
-  must be set with the `Secure` attribute by a secure page (HTTPS)
+  must be set with the `Secure` attribute
 
 - Cookies with names starting with `__Host-`
 
-  must be set with the `Secure` attribute by a secure page (HTTPS)
+  must be set with the `Secure` attribute
 
   must not have a `Domain` attribute specified
 
@@ -494,22 +494,35 @@ The browser will reject cookies with these prefixes that don't comply with their
 
   ---
 
-  This guarantees that such cookies are only sent to the host that set them, and not to any other host on the domain. It also guarantees that they are set host-wide and cannot be overridden on any path on that host. This combination yields a cookie that is as close as can be to treating the origin as a security boundary.
+  This guarantees that:
+  
+  - such cookies are only sent to the host that set them,
+    (and not to any other host on the domain)
+
+  - they are set host-wide
+    and
+    cannot be overridden on any path on that host
+  
+  This combination yields a cookie that is as close as can be to
+  treating the origin as a security boundary.
 
 - Cookies with names starting with `__Http-`
 
-  must be set with the `Secure` flag by a secure page (HTTPS) and in addition must have the HttpOnly attribute set to prove that they were set via the `Set-Cookie` header (they can't be set or modified via JavaScript features such as [`Document.cookie`](
-    https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie
-  ) or the [Cookie Store API](
-    https://developer.mozilla.org/en-US/docs/Web/API/Cookie_Store_API
-  ))
+  must be set with the `Secure` flag
+  
+  must have the `HttpOnly` attribute set 
 
 - Cookies with names starting with `__Host-Http-`
 
-  must be set with the `Secure` flag by a secure page (HTTPS) and must have the `HttpOnly` attribute set to prove that they were set via the `Set-Cookie` header
+  must be set with the `Secure` flag
+  
+  must have the `HttpOnly` attribute set
 
-  In addition, they also have the same restrictions as `__Host-`-prefixed cookies.
+  have the same restrictions as `__Host-`-prefixed cookies.
 
   ---
 
-  This combination yields a cookie that is as close as can be to treating the origin as a security boundary while at the same time ensuring developers and server operators know that its scope is limited to HTTP requests.
+  This combination yields a cookie that is as close as can be to
+  treating the origin as a security boundary
+  while at the same time
+  ensuring developers and server operators know that its scope is limited to HTTP requests.
