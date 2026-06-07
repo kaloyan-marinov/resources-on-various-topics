@@ -259,7 +259,11 @@ Security:
   - `/docsets`
   - `/fr/docs`
 
+<br />
+
 ---
+
+<br />
 
 > [Registrable domain](
 >   https://developer.mozilla.org/en-US/docs/Glossary/Registrable_domain
@@ -451,3 +455,35 @@ The `SameSite` attribute:
     ```
     Set-Cookie: widget_session=7yjgj57e4n3d; SameSite=None; Secure; HttpOnly
     ```
+
+<br />
+
+---
+
+<br />
+
+Cookie prefixes
+
+> Because of the design of the cookie mechanism, a server can't confirm that a cookie was set from a secure origin or even tell *where* a cookie was originally set.
+> 
+> An application on a subdomain can set a cookie with the `Domain` attribute, which gives access to that cookie on all other subdomains. This mechanism can be abused in a [session fixation](
+>     https://owasp.org/www-community/attacks/Session_fixation
+> ) attack.
+
+As a [defense-in-depth measure](
+    https://en.wikipedia.org/wiki/Defense_in_depth_(computing)
+), you can use *cookie prefixes* to impose specific restrictions on a cookie's attributes in supporting user-agents.
+All cookie prefixes start with a double-underscore (`__`) and end in a dash (`-`).
+[Several cookie prefixes are available.]
+
+The browser will reject cookies with these prefixes that don't comply with their restrictions. As the application server only checks for a specific cookie name when determining if the user is authenticated or a CSRF token is correct, this effectively acts as a defense measure against [session fixation](
+    https://owasp.org/www-community/attacks/Session_fixation
+).
+
+- Cookies with names starting with `__Secure-`
+
+- Cookies with names starting with `__Host-`
+
+- Cookies with names starting with `__Http-`
+
+- Cookies with names starting with `__Host-Http-`
