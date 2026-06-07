@@ -525,3 +525,45 @@ The browser will reject cookies with these prefixes that don't comply with their
   treating the origin as a security boundary
   while at the same time
   ensuring developers and server operators know that its scope is limited to HTTP requests.
+
+
+
+## Privacy and tracking
+
+Privacy is a very important consideration when building websites which, when done right, can build trust with your users. If done badly, it can completely erode that trust and cause all kinds of other problems.
+
+Third-party cookies can be set by third-party content embedded in sites via `<iframe>`s. They have many legitimate uses include sharing user profile information, counting ad impressions, or collecting analytics across different related domains.
+
+However, third-party cookies can also be used to create creepy, invasive user experiences. A third-party server can create a profile of a user's browsing history and habits based on cookies sent to it by the same browser when accessing multiple sites. The classic example is when you search for product information on one site and are then chased around the web by adverts for similar products wherever you go.
+
+Browser vendors know that users don't like this behavior, and as a result have all started to block third-party cookies by default, or at least made plans to go in that direction. Third-party cookies (or just tracking cookies) may also be blocked by other browser settings or extensions.
+
+
+
+## Cookie-related regulations
+
+Legislation or regulations that cover the use of cookies include:
+
+- The [General Data Privacy Regulation](
+    https://gdpr.eu/
+  ) (GDPR) in the European Union
+
+- The ePrivacy Directive in the EU
+
+- The California Consumer Privacy Act
+
+These regulations have global reach. They apply to any site on the World Wide Web that users from these jurisdictions access (the EU and California, with the caveat that California's law applies only to entities with gross revenue over 25 million USD, among things).
+
+
+
+These regulations include requirements such as:
+
+- Notifying users that your site uses cookies.
+
+- Allowing users to opt out of receiving some or all cookies.
+
+- Allowing users to use the bulk of your service without receiving cookies.
+
+
+
+There may be other regulations that govern the use of cookies in your locality. The burden is on you to know and comply with these regulations. There are companies that offer "cookie banner" code that helps you comply with these regulations.
