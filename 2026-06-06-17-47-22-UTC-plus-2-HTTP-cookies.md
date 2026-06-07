@@ -482,15 +482,22 @@ The browser will reject cookies with these prefixes that don't comply with their
 
 - Cookies with names starting with `__Secure-`
 
-  must be set with the `Secure` attribute
+  - must be set with the `Secure` attribute
+
+- Cookies with names starting with `__Http-`
+
+  - must be set with the `Secure` attribute
+  
+  - must have the `HttpOnly` attribute set
+    (which proves that they were set via the `Set-Cookie` header)
 
 - Cookies with names starting with `__Host-`
 
-  must be set with the `Secure` attribute
+  - must be set with the `Secure` attribute
 
-  must not have a `Domain` attribute specified
+  - must not have a `Domain` attribute specified
 
-  the Path attribute must be set to `/`
+  - the Path attribute must be set to `/`
 
   ---
 
@@ -506,19 +513,11 @@ The browser will reject cookies with these prefixes that don't comply with their
   This combination yields a cookie that is as close as can be to
   treating the origin as a security boundary.
 
-- Cookies with names starting with `__Http-`
-
-  must be set with the `Secure` flag
-  
-  must have the `HttpOnly` attribute set 
-
 - Cookies with names starting with `__Host-Http-`
 
-  must be set with the `Secure` flag
-  
-  must have the `HttpOnly` attribute set
+  - have the same restrictions as `__Http-`-prefixed cookies
 
-  have the same restrictions as `__Host-`-prefixed cookies.
+  - have the same restrictions as `__Host-`-prefixed cookies.
 
   ---
 
