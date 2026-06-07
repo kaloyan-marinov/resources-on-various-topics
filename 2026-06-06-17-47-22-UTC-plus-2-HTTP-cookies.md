@@ -381,9 +381,42 @@ The `SameSite` attribute:
 
     useful for affecting the display of a «site», e.g.
     
-    - you might have partner product information along with an affiliate link on your website.
+    - «site» A might have partner product information along with an affiliate link (to «site» B)
     
-    - When that link is followed to the partner website, they might want to set a cookie stating that the affiliate link was followed, which displays a reward banner and provides a discount if the product is purchased.
+    - When that link is followed to «site» B (= the partner website),
+      «site B» might set a cookie indicating that an affiliate link was followed
+    
+    - on what kinds of requests to «site» B will the browser send the cookie?
+
+      - If the user is already on «site» B and clicks around,
+        the cookie is sent. Same site, no question.
+
+      - If the user performs «top-level navigation» to «site» B
+        (such as clicking a link from anywhere, including «site» A again; typing a URL;),
+        the cookie is sent.
+    
+      - The cookie is NOT sent on background/embedded «cross-site requests»
+        such as:
+
+        (a) «site» A embeds an `<img>` or `<iframge>` pointing to «site» B
+
+        (b) «site» A has an `<img src="https://site-B.com/pixel.gif">`
+            loading silently in the background
+
+      ---
+
+      the distinction is between
+      a navigatio that the user consciously initiated
+      vs.
+      a cross-site sub-resource request
+    
+    on all subsequent requests to «site» B (browsing around, adding to cart, checkout, etc.),
+      the browser sends the cookie along automatically;
+      «site» B's server
+      reads the cookie,
+      displays a discount banner,
+      credits the affiliate (if the user purchases the discounted product),
+      etc.
 
     example:
     ```
