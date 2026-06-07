@@ -388,27 +388,41 @@ The `SameSite` attribute:
     
     - on what kinds of requests to «site» B will the browser send the cookie?
 
-      - If the user is already on «site» B and clicks around,
-        the cookie is sent. Same site, no question.
+      (a) in the case of a navigation that the user consciously initiated
 
-      - If the user performs «top-level navigation» to «site» B
-        (such as clicking a link from anywhere, including «site» A again; typing a URL;),
-        the cookie is sent.
-    
-      - The cookie is NOT sent on background/embedded «cross-site requests»
-        such as:
+        - If the user is already on «site» B and clicks around,
+          the cookie is sent. Same site, no question.
 
-        (a) «site» A embeds an `<img>` or `<iframge>` pointing to «site» B
+        - If the user performs «top-level navigation» to «site» B
+          (such as clicking a link from anywhere, including «site» A again; typing a URL; etc.),
+          the cookie is sent.
 
-        (b) «site» A has an `<img src="https://site-B.com/pixel.gif">`
-            loading silently in the background
+      (b) in the case of background/embedded «cross-site requests»
 
-      ---
+        - If «site» A embeds an `<img>` or `<iframge>` pointing to «site» B,
+          the cookie is NOT sent.
+        
+        - If «site» A has an `<img src="https://site-B.com/pixel.gif">`
+          loading silently in the background,
+          the cookie is NOT sent.
 
-      the distinction is between
-      a navigatio that the user consciously initiated
-      vs.
-      a cross-site sub-resource request
+        - If «site» A is trying to silently ping «site» B in the background
+          the cookie is NOT sent.
+        
+        - In the case of invisible background requests that would let «site» B know
+          "this user is currently on «site» A"
+          without the user doing anything,
+          the cookie is NOT sent.
+
+          That is a tracking threat, which `SameSite=Lax` was designed to block.
+
+        - Any «site»,
+          which is different from «site» B
+          and
+          which issues an invisible background request to «site» B,
+          can't silently trigger an authenticated action on «site» B on the user's behalf.
+        
+          That is a CSRF threat, which `SameSite=Lax` was designed to block.
     
     on all subsequent requests to «site» B (browsing around, adding to cart, checkout, etc.),
       the browser sends the cookie along automatically;
