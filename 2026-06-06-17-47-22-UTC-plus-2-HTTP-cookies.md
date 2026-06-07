@@ -261,13 +261,91 @@ Security:
 
 ---
 
-«Cross-site requests» are requests where the [site](
-    https://developer.mozilla.org/en-US/docs/Glossary/Site
-) (the registrable domain) and/or the scheme (http or https) do not match the site the user is currently visiting. This includes:
-
-- requests sent when links are clicked on other sites to navigate to your site, and
-
-- any request sent by embedded third-party content.
+> [Registrable domain](
+>   https://developer.mozilla.org/en-US/docs/Glossary/Registrable_domain
+> )
+>
+> A «registrable domain» is a domain
+> that can be (or has already been) registered
+> by an individual or an organization
+> through a «domain name registrar». 
+>
+> «Registrable domains» are created directly underneath an «effective top-level domain» (eTLD),
+> such as `.org`, `.com`, or `.ac.uk`.
+> (
+> For this reason a «registrable domain» is sometimes called an "eTLD+1".
+> )
+>
+> For example, all of the following are «registrable domains»:
+>
+> ```
+> crookedtimber.org
+> theguardian.com
+> sussex.ac.uk
+> ```
+> 
+> All domains under a «registrable domain» belong to the same organization. For example:
+> 
+> ```
+>  film.theguardian.com
+> music.theguardian.com
+> ```
+> 
+> ```
+>       news.sussex.ac.uk
+>       blog.sussex.ac.uk
+> admissions.sussex.ac.uk
+> ```
+> 
+> (
+>
+> Note that not all eTLDs are top-level domains, because many registrars allow organizations to register domains at levels below the top level. In the example above, `.ac.uk` is a subdomain of the top-level `.uk` domain, so `sussex.ac.uk` and `aber.ac.uk` can be registered to different organizations.
+> 
+> Because this is a matter of the registrar's policies, it's impossible to tell algorithmically whether a given domain name suffix (like `.ac.uk`) is publicly registrable or not. The [Public Suffix List](
+>     https://publicsuffix.org/
+> ) is a list of all suffixes under which organizations can directly register names: that is, it is a list of eTLDs.
+>
+> )
+>
+> ---
+>
+> [Site](
+>   https://developer.mozilla.org/en-US/docs/Glossary/Site
+> )
+>
+> [At the risk of repeating the preceding sub-section, let us recall that]
+>
+> - A «registrable domain» consists of an entry in the [Public Suffix List](
+>   https://publicsuffix.org/list/
+> ) plus [a string] just before it.
+>
+> - This means that, for example,
+>   ```
+>   theguardian.co.uk
+>   sussex.ac.uk
+>   bookshop.org
+>   ```
+>   are all «registrable domains».
+>
+> A «site» is determined by the «registrable domain» portion of the domain name.
+>
+> According to this definition,
+> ```
+> support.mozilla.org
+> developer.mozilla.org
+> ```
+> are part of the same «site»,
+> because `mozilla.org` is a «registrable domain».
+>
+> ---
+>
+> «Cross-site requests» are requests where the [«site»](
+>     https://developer.mozilla.org/en-US/docs/Glossary/Site
+> ) (the «registrable domain») and/or the scheme (http or https) do not match the «site» the user is currently visiting. This includes:
+> 
+> - requests sent when links are clicked on other sites to navigate to your site, and
+> 
+> - any request sent by embedded third-party content.
 
 
 
@@ -279,7 +357,7 @@ The `SameSite` attribute:
   preserving user [privacy](
     https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies#privacy_and_tracking
   ) and providing some protection against [cross-site request forgery](
-    https://developer.mozilla.org/en-US/docs/Glossary/CSRF
+  https://developer.mozilla.org/en-US/docs/Glossary/CSRF
   ) attacks
 
 - takes 3 possible values:
